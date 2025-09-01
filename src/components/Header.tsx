@@ -40,18 +40,14 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Logo - UPDATED SECTION */}
           <a href="/" className="site-logo">
-            {/* Text logo for all devices */}
-            <div className="flex flex-col items-start mt-[10%]">
-              <div className="flex items-baseline">
-                <span className="text-secondary-navy text-2xl font-bold">Live</span>
-                <span className="text-primary-red text-2xl font-bold">Free</span>
-              </div>
-              <span className="text-secondary-navy text-xs uppercase tracking-widest mt-[-4px]">
-                Immigration Canada
-              </span>
-            </div>
+            {/* The text logo has been replaced with this image tag */}
+            <img 
+              src="/logo.svg" // Assumes you named it logo.svg. Change to /logo.png if needed.
+              alt="LiveFree Immigration Canada Logo" 
+              className="h-16 w-auto" // Control the size here. h-16 is 64px.
+            />
           </a>
 
           {/* Desktop Navigation */}
