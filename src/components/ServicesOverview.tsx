@@ -78,7 +78,7 @@ const ServicesOverview: React.FC = () => {
 
   return (
     // UPDATED THIS LINE: Changed bg-[#100E09] to bg-bg-dark-navy
-    <section id="services-section" className="bg-green-500 py-20">
+    <section id="services-section" className="bg-secondary-navy py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <SubHeading className="text-4xl md:text-5xl font-bold text-white mb-4">
