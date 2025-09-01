@@ -11,7 +11,7 @@ html {
 
 /* === Header sizing (bump a bit so the logo can be larger) === */
 :root{
-  --header-h: 87.68px;   /* desktop - increased by 52% total (30% + 20%) */
+  --header-h: 95px;   /* desktop - increased by 52% total (30% + 20%) */
   --header-h-sm: 74.56px; /* mobile - increased by 55% total (30% + 20%) */
   --logo-inset: 8px;     /* breathing room inside header */
 }
