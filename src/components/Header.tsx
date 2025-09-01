@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           <a href="/" className="site-logo">
             {/* The text logo has been replaced with this image tag */}
             <img 
-              src="/Artboard 1.svg.svg" // Assumes you named it logo.svg. Change to /logo.png if needed.
+              src="/Artboard 1.svg" // Assumes you named it logo.svg. Change to /logo.png if needed.
               alt="LiveFree Immigration Canada Logo" 
               className="h-20 w-auto" // Control the size here. h-16 is 64px.
             />
