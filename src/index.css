@@ -1,0 +1,198 @@
+/* Force light color scheme globally */
+html {
+  color-scheme: light;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Header sizing (bump a bit so the logo can be larger) === */
+:root{
+  --header-h: 87.68px;   /* desktop - increased by 52% total (30% + 20%) */
+  --header-h-sm: 74.56px; /* mobile - increased by 55% total (30% + 20%) */
+  --logo-inset: 8px;     /* breathing room inside header */
+}
+
+/* Header */
+header{
+  height: var(--header-h);
+}
+@media (max-width:768px){
+  header{ height: var(--header-h-sm); }
+}
+
+/* Keep header items centered vertically */
+.header-inner{
+  display:flex;
+  align-items:center;          /* vertical alignment for logo + nav + CTA */
+  justify-content:space-between;
+  height:100%;
+  gap: clamp(12px, 2vw, 28px);
+  padding-inline: clamp(12px, 3vw, 28px);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Logo wrapper */
+.site-logo{
+  display:flex;
+  align-items:center;          /* centers the text with the nav items */
+  height: 100%;
+  flex:0 0 auto;               /* prevent shrinking */
+}
+
+/* Optional: ensure nav and CTA align perfectly on the same baseline */
+.header-nav,
+.header-cta{
+  display:flex;
+  align-items:center;
+  height: 100%;
+}
+
+/* Animation utility (unchanged) */
+@layer utilities{
+  .animate-fadeIn{ animation: fadeIn .3s ease-in-out; }
+}
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(-10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Scroll-triggered fade-in animation for cards */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  
+  .scroll-fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .about-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  
+  .about-card.about-card-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Define CSS variables for consistent color usage */
+:root {
+  --primary-red: #E60023;
+  --primary-red-hover: #CC001E;
+  --secondary-navy: #1E2A38;
+  --bg-dark-navy: #0C0F16;
+}
+
+/* --- Radial Pulse Glow Effect --- */
+.liquid-button-pulse {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: var(--primary-red);
+  transition: background-color 0.3s ease;
+}
+
+.liquid-button-pulse::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  /* White radial glow that expands from center */
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  z-index: -1;
+}
+
+.liquid-button-pulse:hover::after {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 1;
+}
+
+.liquid-button-pulse:hover {
+  background-color: var(--primary-red-hover);
+}
+
+/* Reduced motion fallback for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .liquid-button-pulse::after {
+    transition: none;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  .liquid-button-pulse:hover::after {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+/* About section card animations */
+.about-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-card.about-card-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Enhanced hover effects for about cards */
+.about-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+.about-card * {
+  transition: inherit;
+}
+
+/* Navigation Link Underline Animation */
+.nav-link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #E60023;
+  transition: width 0.3s ease-out;
+}
+
+.nav-link-underline:hover::after {
+  width: 100%;
+}
