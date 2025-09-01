@@ -46,7 +46,7 @@ const FAQSection: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
           </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-bg-dark-navy mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary-navy mb-4">
             Frequently Asked Questions (FAQ)
           </h2>
           <p className="text-xl text-gray-600">
