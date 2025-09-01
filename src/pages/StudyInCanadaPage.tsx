@@ -90,7 +90,7 @@ const StudyInCanadaPage: React.FC = () => {
       <section className="py-20 bg-bg-light-gray animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
               Why Choose Canada for Your Education?
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -115,7 +115,7 @@ const StudyInCanadaPage: React.FC = () => {
       <section className="py-20 bg-white animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
               What We Help You With
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -147,7 +147,7 @@ const StudyInCanadaPage: React.FC = () => {
       <section className="py-20 bg-blue-50 animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
               Important Resources
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
