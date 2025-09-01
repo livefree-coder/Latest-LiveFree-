@@ -45,7 +45,7 @@ const Header: React.FC = () => {
             <img 
               src="/logo2.svg"
               alt="LiveFree Immigration Canada Logo" 
-              className="h-21 w-auto" // This will now fill the new, larger header height
+              className="h-20 w-auto" // This will now fill the new, larger header height
             />
           </a>
 
