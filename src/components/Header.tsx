@@ -41,13 +41,12 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - UPDATED SECTION */}
-          {/* Change 1: Added vertical padding (py-2) to the link to create breathing room. */}
-          <a href="/" className="site-logo py-2">
+          <a href="/" className="site-logo">
+            {/* The text logo has been replaced with this image tag */}
             <img 
-              src="/logo2.svg" // Updated to your filename
+              src="/logo2.svg" // Assumes you named it logo.svg. Change to /logo.png if needed.
               alt="LiveFree Immigration Canada Logo" 
-              // Change 2: 'h-full' tells the logo to fill the available vertical space within the padded link.
-              className="h-full w-auto" 
+              className="h-20 w-auto" // Control the size here. h-16 is 64px.
             />
           </a>
 
