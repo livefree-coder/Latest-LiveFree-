@@ -77,12 +77,13 @@ const ServicesOverview: React.FC = () => {
   ];
 
   return (
-    <section id="services-section" className="bg-[#100E09] py-20">
+    // UPDATED THIS LINE: Changed bg-[#100E09] to bg-bg-dark-navy
+    <section id="services-section" className="bg-bg-dark-navy py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <SubHeading className="text-4xl md:text-5xl font-bold text-white mb-4">
             What We Help You With
-          </h2>
+          </SubHeading>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
