@@ -384,9 +384,9 @@ const BusinessImmigrationPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-secondary-navy to-bg-dark-navy animate-fadeIn">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SubHeading className="text-3xl md:text-4xl text-white mb-6">
+          <h2 className="text-3xl md:text-4xl text-white mb-6">
             Ready to Start Your Business in Canada?
-          </SubHeading>
+          </h2>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
             Let our experienced team guide you through your business immigration journey with strategic planning and expert support
           </p>
