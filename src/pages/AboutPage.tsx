@@ -466,9 +466,9 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center mb-8">
             <Target className="w-12 h-12 text-primary-red mr-4" />
-            <SubHeading className="text-4xl md:text-5xl text-white">
+            <h2 className="text-4xl md:text-5xl text-white">
               Your Dream. Our Mission.
-            </SubHeading>
+            </h2>
           </div>
           <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-12">
             We believe immigration isn't just a transaction — it's a life-changing decision.
@@ -490,6 +490,33 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
+            Ready to Begin Your Canadian Journey?
+          </h2>
+          <p className="text-xl text-text-muted mb-8">
+            Let's discuss how we can help you achieve your immigration goals
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => navigate('/contact')}
+              className="bg-secondary-navy text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-colors"
+            >
+              Schedule Free Consultation
+            </button>
+            <button
+              onClick={() => navigate('/contact')}
+              className="border-2 border-secondary-navy text-secondary-navy px-8 py-4 rounded-md text-lg font-semibold hover:bg-secondary-navy hover:text-white transition-colors"
+            >
+              Contact Us Today
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export default AboutPage;
