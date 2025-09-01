@@ -1,242 +1,221 @@
-import React from 'react';
-import { BookOpen, FileText, AlertCircle, Users, Home, ExternalLink, GraduationCap, CheckCircle } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+import { CheckCircle, Users, Award, Globe, Shield, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { Heading } from '../components/Heading';
-import { SubHeading } from '../components/SubHeading';
+import { SubHeading } from './SubHeading';
 
-const StudyInCanadaPage: React.FC = () => {
+const AboutSection: React.FC = () => {
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const navigate = useNavigate();
 
-  const services = [
-    {
-      icon: <FileText className="w-8 h-8 text-blue-600" />,
-      title: "Study Permit Application",
-      description: "Full assistance in applying for your study permit with precision."
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-green-600" />,
-      title: "SOP & Documentation Support",
-      description: "Craft compelling Statements of Purpose and guide document preparation."
-    },
-    {
-      icon: <AlertCircle className="w-8 h-8 text-amber-600" />,
-      title: "Visa Refusal Solutions",
-      description: "Expert handling of previous refusals with strategic reapplication."
-    },
-    {
-      icon: <Home className="w-8 h-8 text-purple-600" />,
-      title: "Post-Arrival Services",
-      description: "Guidance on work permits, extensions, permanent residency pathways, and settlement."
-    },
-    {
-      icon: <Users className="w-8 h-8 text-red-600" />,
-      title: "Family Accompaniment Support",
-      description: "Assisting with spouse open work permits and dependent child visas."
-    }
-  ];
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target as HTMLElement;
+            const index = parseInt(target.dataset.cardIndex || '0');
+            
+            setTimeout(() => {
+              target.classList.add('about-card-visible');
+            }, index * 200);
+            
+            observer.unobserve(target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
 
-  const benefits = [
-    "Top-ranked institutions with global recognition",
-    "Multicultural communities and inclusive environment",
-    "Clear pathways to permanent residency",
-    "Post-graduation work permit opportunities",
-    "World-class education at affordable costs",
-    "Safe and welcoming environment for international students"
+    cardRefs.current.forEach((card) => {
+      if (card) {
+        observer.observe(card);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const strengths = [
+    "Deep expertise in Canadian education and immigration policy",
+    "A team that includes both RCICs and international legal professionals",
+    "80%+ success rate in refugee and humanitarian claims",
+    "End-to-end support: from eligibility assessment to application and appeal",
+    "Transparent process and ethical, honest guidance",
+    "Support for clients both inside and outside Canada"
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-secondary-navy via-bg-dark-navy to-secondary-navy py-20 animate-fadeIn">
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <GraduationCap className="w-16 h-16 text-primary-red" />
-            </div>
-            <Heading className="text-4xl md:text-6xl text-white mb-6 leading-tight">
-              Study in Canada
-            </Heading>
-            <p className="text-xl md:text-2xl text-primary-red font-semibold mb-6">
-              Open the Doors to World-Class Education & Limitless Opportunities
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main About Us Section */}
+        <div className="text-center mb-16">
+          <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+            About Us
+          </SubHeading>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              LiveFree Immigration Canada is a client-focused immigration consultancy built on 
+              expertise, integrity, and results. Our team of highly skilled licensed consultants, 
+              legal professionals and immigration experts brings years of combined experience in 
+              Canadian immigration law and global mobility.
             </p>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-8">
-                Canada is one of the world's most sought-after destinations for international students,
-                offering top-ranked institutions, multicultural communities, and clear pathways to
-                permanent residency. Whether you're aiming for academic excellence, career advancement,
-                or a global experience, studying in Canada is a life-changing step.
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              We specialize in providing tailored immigration solutions for individuals, families, 
+              students, and businesses. Whether it's permanent residency, study permits, work visas, 
+              or business immigration, our advice is strategic, accurate, and effective.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              What sets us apart is our commitment to excellence. Our team's deep legal acumen, 
+              sharp problem-solving skills, and personalized approach ensure that every client's 
+              journey is smooth, transparent, and successful.
+            </p>
+          </div>
+        </div>
+
+        {/* Why Choose Us Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-4">
+              Why Choose Us?
+            </SubHeading>
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6">
+                More Than Applications. We Build Futures.
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                At LiveFree Immigration, we're not just another immigration firm. We're a dedicated 
+                team of licensed immigration consultants and legal experts who understand that 
+                immigration is about people, not just paperwork. Whether you're hoping to study, 
+                work, reunite with family, or build a new life in Canada, we bring clarity, 
+                strategy, and care to every step of your journey.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => navigate('/contact')}
-                className="bg-primary-red text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-primary-red-hover transition-colors"
+          </div>
+
+          {/* What Sets Us Apart */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+              <Users className="w-8 h-8 text-secondary-navy mr-3" />
+              What Sets Us Apart?
+            </h3>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" id="what-sets-us-apart-cards">
+              {/* Licensed Professionals */}
+              <div 
+                ref={(el) => (cardRefs.current[0] = el)}
+                className="about-card bg-gray-50 rounded-xl p-8 transition-all duration-500 ease-out hover:bg-white hover:shadow-xl hover:scale-105 hover:-translate-y-2 cursor-pointer group" 
+                data-card-index="0"
               >
-                Start Your Application
-              </button>
-              <button
-                onClick={() => navigate('/contact')}
-                className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
-              >
-                Free Consultation
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Study in Canada */}
-      <section className="py-20 bg-bg-light-gray animate-fadeIn">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
-              Why Choose Canada for Your Education?
-            </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Discover the advantages that make Canada the preferred destination for millions of international students
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="group bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 hover:bg-primary-red cursor-pointer">
-                <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-green-600 group-hover:text-white mr-3 mt-1 flex-shrink-0 transition-colors duration-300" />
-                  <p className="text-text-body group-hover:text-white leading-relaxed transition-colors duration-300">{benefit}</p>
+                <div className="flex items-center mb-4">
+                  <Award className="w-8 h-8 text-primary-red mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" />
+                  <h4 className="text-xl font-bold text-slate-900">
+                    Licensed Professionals with Legal Insight
+                  </h4>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What We Help You With */}
-      <section className="py-20 bg-white animate-fadeIn">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
-              What We Help You With
-            </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Comprehensive support throughout your entire study journey in Canada
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-bg-light-gray rounded-xl p-8 text-center hover:bg-gray-100 transition-colors group">
-                <div className="flex justify-center mb-6">
-                  <div className="p-4 bg-white rounded-full shadow-sm group-hover:shadow-md transition-shadow">
-                    {service.icon}
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-bg-dark-navy mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-text-muted leading-relaxed">
-                  {service.description}
+                <p className="text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-gray-800">
+                  Our team is composed of Regulated Canadian Immigration Consultants (RCICs) and 
+                  Barristers qualified in England and Wales. This blend of Canadian regulatory 
+                  expertise and international legal knowledge gives you an edge — especially in 
+                  complex or high-stakes applications.
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Helpful Links */}
-      <section className="py-20 bg-blue-50 animate-fadeIn">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
-              Important Resources
-            </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Essential links and resources for your study permit application
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* DLI List */}
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-blue-100 rounded-full mr-4">
-                  <BookOpen className="w-8 h-8 text-secondary-navy" />
-                </div>
-                <h3 className="text-2xl font-bold text-bg-dark-navy">
-                  Designated Learning Institutions (DLI) List
-                </h3>
-              </div>
-              <p className="text-text-body mb-6 leading-relaxed">
-                Only institutions approved by a provincial or territorial government can host
-                international students. Verify if your chosen institution is authorized by
-                visiting the official IRCC list.
-              </p>
-              <a
-                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary-navy text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
+              {/* Strategic Approach */}
+              <div 
+                ref={(el) => (cardRefs.current[1] = el)}
+                className="about-card bg-gray-50 rounded-xl p-8 transition-all duration-500 ease-out hover:bg-white hover:shadow-xl hover:scale-105 hover:-translate-y-2 cursor-pointer group" 
+                data-card-index="1"
               >
-                Check the DLI List Here
-                <ExternalLink className="w-5 h-5 ml-2" />
-              </a>
-            </div>
-
-            {/* Student Visa Check */}
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-green-100 rounded-full mr-4">
-                  <FileText className="w-8 h-8 text-secondary-navy" />
+                <div className="flex items-center mb-4">
+                  <Globe className="w-8 h-8 text-secondary-navy mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" />
+                  <h4 className="text-xl font-bold text-slate-900">
+                    We Don't Just File – We Strategize
+                  </h4>
                 </div>
-                <h3 className="text-2xl font-bold text-bg-dark-navy">
-                  Check if You Need a Student Visa
-                </h3>
+                <p className="text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-gray-800">
+                  Every successful immigration case starts with the right strategy. We analyze your 
+                  profile, goals, and circumstances to recommend the most effective immigration path — 
+                  not just the easiest or most obvious one. Whether it's choosing the right province, 
+                  strengthening your Express Entry profile, or navigating a humanitarian case, we 
+                  craft a solution that fits you.
+                </p>
               </div>
-              <p className="text-text-body mb-6 leading-relaxed">
-                Use the official IRCC tool to determine if you need a study permit
-                based on your country of citizenship and the program you plan to study.
-              </p>
-              <a
-                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary-navy text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
+
+              {/* Personalized Service */}
+              <div 
+                ref={(el) => (cardRefs.current[2] = el)}
+                className="about-card bg-gray-50 rounded-xl p-8 transition-all duration-500 ease-out hover:bg-white hover:shadow-xl hover:scale-105 hover:-translate-y-2 cursor-pointer group" 
+                data-card-index="2"
               >
-                Check Student Visa Requirements
-                <ExternalLink className="w-5 h-5 ml-2" />
-              </a>
+                <div className="flex items-center mb-4">
+                  <Heart className="w-8 h-8 text-primary-red mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" />
+                  <h4 className="text-xl font-bold text-slate-900">
+                    Personalized Service, Every Step of the Way
+                  </h4>
+                </div>
+                <p className="text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-gray-800">
+                  At LiveFree, we don't believe in one-size-fits-all solutions. We listen carefully, 
+                  stay responsive, and tailor our advice and applications to your unique needs — 
+                  whether you're an international student, skilled professional, entrepreneur, or 
+                  refugee claimant.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-secondary-navy to-bg-dark-navy animate-fadeIn">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SubHeading className="text-3xl md:text-4xl text-white mb-6">
-            Ready to Start Your Canadian Education Journey?
-          </SubHeading>
-          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-            Let our expert team guide you through every step of your study permit application process
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-primary-red text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-primary-red-hover transition-colors"
-            >
-              Schedule Free Consultation
-            </button>
-            <button
-              onClick={() => navigate('/contact')}
-              className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
-            >
-              Contact Us Today
-            </button>
+          {/* Core Strengths */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+              <Shield className="w-8 h-8 text-secondary-navy mr-3" />
+              Our Core Strengths
+            </h3>
+            
+            <div className="bg-bg-dark-navy rounded-2xl p-8 md:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {strengths.map((strength, index) => (
+                  <div key={index} className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-primary-red mr-4 mt-1 flex-shrink-0" />
+                    <p className="text-white text-lg leading-relaxed">{strength}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Mission Statement */}
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-secondary-navy to-bg-dark-navy rounded-2xl p-8 md:p-12 text-left">
+              <h3 className="text-3xl font-bold text-white mb-6 text-left">
+                Your Dream. Our Mission.
+              </h3>
+              <p className="text-xl text-gray-200 leading-relaxed mb-8">
+                We believe immigration isn't just a transaction — it's a life-changing decision. 
+                That's why we've built our practice around integrity, transparency, and results. 
+                Our goal is to empower you to live free, make informed choices, and reach your 
+                full potential in Canada.
+              </p>
+              <div className="text-left">
+                <p className="text-2xl font-bold text-white mb-8">
+                  At LiveFree Immigration, we don't just process applications — we build futures.
+                </p>
+                <button 
+                  onClick={() => navigate('/contact')}
+                  className="bg-primary-red text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-primary-red-hover transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                >
+                  Start Your Journey Today
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default StudyInCanadaPage;
+export default AboutSection;

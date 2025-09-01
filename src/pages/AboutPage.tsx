@@ -174,7 +174,7 @@ const AboutPage: React.FC = () => {
       <section ref={whoWeAreRef} className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6 relative inline-block">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6 relative inline-block">
               Who We Are
               <span className={`absolute left-0 bottom-0 h-1 bg-primary-red transition-all duration-700 ${whoWeAreInView ? 'w-full' : 'w-0'}`}></span>
             </SubHeading>
@@ -204,7 +204,7 @@ const AboutPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
               Our Track Record
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -233,7 +233,7 @@ const AboutPage: React.FC = () => {
       <section ref={whyChooseUsRef} className="py-20 bg-bg-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-4 relative inline-block">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-4 relative inline-block">
               Why Choose Us?
               <span className={`absolute left-0 bottom-0 h-1 bg-primary-red transition-all duration-700 ${whyChooseUsInView ? 'w-full' : 'w-0'}`}></span>
             </SubHeading>
@@ -253,7 +253,7 @@ const AboutPage: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-20">
-            <h3 className="text-3xl font-bold text-secondary-navy mb-12 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
               What Sets Us Apart?
             </h3>
@@ -263,7 +263,7 @@ const AboutPage: React.FC = () => {
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 group hover:scale-105 hover:shadow-lg hover:bg-red-50 transition-all duration-300">
                 <div className="flex items-center mb-6">
                   <Award className="w-10 h-10 text-primary-red mr-4 group-hover:rotate-[360deg] transition-transform duration-500" />
-                  <h4 className="text-xl font-bold text-secondary-navy">
+                  <h4 className="text-xl font-bold text-bg-dark-navy">
                     Licensed Professionals with Legal Insight
                   </h4>
                 </div>
@@ -279,7 +279,7 @@ const AboutPage: React.FC = () => {
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 group hover:scale-105 hover:shadow-lg hover:bg-red-50 transition-all duration-300">
                 <div className="flex items-center mb-6">
                   <Globe className="w-10 h-10 text-secondary-navy mr-4 group-hover:rotate-[360deg] transition-transform duration-500" />
-                  <h4 className="text-xl font-bold text-secondary-navy">
+                  <h4 className="text-xl font-bold text-bg-dark-navy">
                     We Don't Just File – We Strategize
                   </h4>
                 </div>
@@ -296,7 +296,7 @@ const AboutPage: React.FC = () => {
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 group hover:scale-105 hover:shadow-lg hover:bg-red-50 transition-all duration-300">
                 <div className="flex items-center mb-6">
                   <Heart className="w-10 h-10 text-primary-red mr-4 group-hover:rotate-[360deg] transition-transform duration-500" />
-                  <h4 className="text-xl font-bold text-secondary-navy">
+                  <h4 className="text-xl font-bold text-bg-dark-navy">
                     Personalized Service, Every Step of the Way
                   </h4>
                 </div>
@@ -312,7 +312,7 @@ const AboutPage: React.FC = () => {
 
           {/* Core Strengths */}
           <div className="mb-20">
-            <h3 className="text-3xl font-bold text-secondary-navy mb-12 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
               <Shield className="w-8 h-8 text-secondary-navy mr-3" />
               Our Core Strengths
             </h3>
@@ -335,7 +335,7 @@ const AboutPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
               Our Values
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -352,7 +352,7 @@ const AboutPage: React.FC = () => {
                       {value.icon}
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold text-secondary-navy mb-4">
+                  <h4 className="text-xl font-bold text-bg-dark-navy mb-4">
                     {value.title}
                   </h4>
                   <p className="text-text-muted leading-relaxed">
@@ -369,7 +369,7 @@ const AboutPage: React.FC = () => {
       <section className="py-20 bg-bg-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
               Our Process
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -386,7 +386,7 @@ const AboutPage: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex-1 text-center lg:text-left">
-                  <h4 className="text-2xl font-bold text-secondary-navy mb-4 relative inline-block">
+                  <h4 className="text-2xl font-bold text-bg-dark-navy mb-4 relative inline-block">
                     {step.title}
                     <span className="absolute left-0 bottom-0 h-1 bg-primary-red w-0 group-hover:w-full transition-all duration-300"></span>
                   </h4>
@@ -407,7 +407,7 @@ const AboutPage: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
               Our Leadership Team
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -421,7 +421,7 @@ const AboutPage: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-secondary-navy to-bg-dark-navy rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Users className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-secondary-navy mb-2">
+              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
                 Senior Immigration Consultant
               </h4>
               <p className="text-secondary-navy font-semibold mb-4">RCIC, LLB</p>
@@ -435,7 +435,7 @@ const AboutPage: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-primary-red to-red-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Scale className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-secondary-navy mb-2">
+              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
                 Legal Advisor
               </h4>
               <p className="text-secondary-navy font-semibold mb-4">Barrister, England & Wales</p>
@@ -449,7 +449,7 @@ const AboutPage: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-green-600 to-teal-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Globe className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-secondary-navy mb-2">
+              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
                 Client Relations Manager
               </h4>
               <p className="text-secondary-navy font-semibold mb-4">Immigration Specialist</p>
@@ -493,7 +493,7 @@ const AboutPage: React.FC = () => {
       {/* Contact CTA Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
+          <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
             Ready to Begin Your Canadian Journey?
           </SubHeading>
           <p className="text-xl text-text-muted mb-8">

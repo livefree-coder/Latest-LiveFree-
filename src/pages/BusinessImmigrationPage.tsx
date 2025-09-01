@@ -143,7 +143,7 @@ const BusinessImmigrationPage: React.FC = () => {
       <section className="py-20 bg-bg-light-gray animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
               Why Choose Canada for Your Business?
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -168,7 +168,7 @@ const BusinessImmigrationPage: React.FC = () => {
       <section className="py-20 bg-white animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
               Why Choose Our Business Immigration Services?
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -193,7 +193,7 @@ const BusinessImmigrationPage: React.FC = () => {
       <section className="py-20 bg-bg-light-gray animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
               Explore Business Immigration Pathways
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
@@ -347,7 +347,7 @@ const BusinessImmigrationPage: React.FC = () => {
       <section className="py-20 bg-blue-50 animate-fadeIn">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <SubHeading className="text-3xl md:text-4xl text-secondary-navy mb-6">
+            <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
               Important Resources
             </SubHeading>
             <p className="text-xl text-text-muted">
