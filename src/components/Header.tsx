@@ -46,7 +46,7 @@ const Header: React.FC = () => {
             <img 
               src="/Artboard 1.svg" // Assumes you named it logo.svg. Change to /logo.png if needed.
               alt="LiveFree Immigration Canada Logo" 
-              className="h-21 w-22" // Control the size here. h-16 is 64px.
+              className="h-25 w-auto" // Control the size here. h-16 is 64px.
             />
           </a>
 
