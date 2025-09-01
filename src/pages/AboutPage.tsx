@@ -253,10 +253,10 @@ const AboutPage: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-20">
-            <h3 className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
+            <SubHeading className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
               What Sets Us Apart?
-            </h3>
+            </SubHeading>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Licensed Professionals */}
@@ -312,10 +312,10 @@ const AboutPage: React.FC = () => {
 
           {/* Core Strengths */}
           <div className="mb-20">
-            <h3 className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
+            <SubHeading className="text-3xl font-bold text-bg-dark-navy mb-12 flex items-center justify-center">
               <Shield className="w-8 h-8 text-secondary-navy mr-3" />
               Our Core Strengths
-            </h3>
+            </SubHeading>
 
             <div className="bg-bg-dark-navy rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
