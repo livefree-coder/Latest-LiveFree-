@@ -54,8 +54,9 @@ const AboutSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main About Us Section */}
         <div className="text-center mb-16">
-          <SubHeading className="text-4xl md:text-5xl mb-6">
+          <SubHeading className="text-4xl md:text-5xl mb-6 relative inline-block group">
             About Us
+            <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
           </SubHeading>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
@@ -80,8 +81,9 @@ const AboutSection: React.FC = () => {
         {/* Why Choose Us Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <SubHeading className="text-4xl md:text-5xl mb-4">
+            <SubHeading className="text-4xl md:text-5xl mb-4 relative inline-block group">
               Why Choose Us?
+              <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
             </SubHeading>
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl font-semibold text-slate-900 mb-6">
@@ -99,10 +101,13 @@ const AboutSection: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-16">
-            <SubHeading className="text-3xl font-bold mb-8 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
-              What Sets Us Apart?
-            </SubHeading>
+              <span className="relative inline-block group">
+                What Sets Us Apart?
+                <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
+              </span>
+            </h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" id="what-sets-us-apart-cards">
               {/* Licensed Professionals */}
@@ -170,10 +175,10 @@ const AboutSection: React.FC = () => {
 
           {/* Core Strengths */}
           <div className="mb-16">
-            <SubHeading className="text-3xl font-bold mb-8 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
               <Shield className="w-8 h-8 text-secondary-navy mr-3" />
               Our Core Strengths
-            </SubHeading>
+            </h3>
             
             <div className="bg-slate-800 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
