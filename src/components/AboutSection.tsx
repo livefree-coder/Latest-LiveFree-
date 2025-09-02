@@ -100,7 +100,7 @@ const AboutSection: React.FC = () => {
           {/* What Sets Us Apart */}
           <div className="mb-16">
             <SubHeading className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
-              <Users className="w-8 h-8 text-secondary-navy mr-3" />
+              <Users className="w-8 h-8 mr-3" />
               What Sets Us Apart?
             </SubHeading>
             
