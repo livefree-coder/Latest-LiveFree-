@@ -2,10 +2,18 @@ import React, { useEffect, useRef } from 'react';
 import { CheckCircle, Users, Award, Globe, Shield, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { SubHeading } from './SubHeading';
+// Import the useInView hook for scroll animations
+import { useInView } from 'react-intersection-observer';
 
 const AboutSection: React.FC = () => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const navigate = useNavigate();
+
+  // Setup Intersection Observers for each animated header
+  // triggerOnce is false by default, so the animation will replay
+  const { ref: aboutRef, inView: aboutInView } = useInView({ threshold: 0.5 });
+  const { ref: whyRef, inView: whyInView } = useInView({ threshold: 0.5 });
+  const { ref: whatRef, inView: whatInView } = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,9 +62,9 @@ const AboutSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main About Us Section */}
         <div className="text-center mb-16">
-          <SubHeading className="text-4xl md:text-5xl mb-6 relative inline-block group">
+          <SubHeading ref={aboutRef} className="text-4xl md:text-5xl mb-6 relative inline-block">
             About Us
-            <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
+            <span className={`absolute bottom-0 left-0 h-1 bg-primary-red transition-all duration-500 ${aboutInView ? 'w-full' : 'w-0'}`}></span>
           </SubHeading>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
@@ -81,9 +89,9 @@ const AboutSection: React.FC = () => {
         {/* Why Choose Us Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <SubHeading className="text-4xl md:text-5xl mb-4 relative inline-block group">
+            <SubHeading ref={whyRef} className="text-4xl md:text-5xl mb-4 relative inline-block">
               Why Choose Us?
-              <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
+              <span className={`absolute bottom-0 left-0 h-1 bg-primary-red transition-all duration-500 ${whyInView ? 'w-full' : 'w-0'}`}></span>
             </SubHeading>
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl font-semibold text-slate-900 mb-6">
@@ -101,11 +109,11 @@ const AboutSection: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+            <h3 ref={whatRef} className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
-              <span className="relative inline-block group">
+              <span className="relative inline-block">
                 What Sets Us Apart?
-                <span className="absolute bottom-0 left-0 h-1 w-0 bg-primary-red transition-all duration-300 group-hover:w-full"></span>
+                <span className={`absolute bottom-0 left-0 h-1 bg-primary-red transition-all duration-500 ${whatInView ? 'w-full' : 'w-0'}`}></span>
               </span>
             </h3>
             
