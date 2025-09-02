@@ -132,7 +132,7 @@ const ImmigratePRPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-secondary-navy via-bg-dark-navy to-secondary-navy py-20 animate-fadeIn">
+      <section className="relative bg-slate-800 py-20 animate-fadeIn">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
