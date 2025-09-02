@@ -80,7 +80,7 @@ const AboutSection: React.FC = () => {
         {/* Why Choose Us Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-4">
+            <SubHeading className="text-4xl md:text-5xl mb-4">
               Why Choose Us?
             </SubHeading>
             <div className="max-w-3xl mx-auto">
