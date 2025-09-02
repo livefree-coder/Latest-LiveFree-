@@ -317,7 +317,7 @@ const AboutPage: React.FC = () => {
               Our Core Strengths
             </SubHeading>
 
-            <div className="bg-bg-dark-navy rounded-2xl p-8 md:p-12">
+            <div className="bg-slate-800 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {coreStrengths.map((strength, index) => (
                   <div key={index} className="flex items-start">
