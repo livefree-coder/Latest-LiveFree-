@@ -109,13 +109,13 @@ const AboutSection: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-16">
-            <h3 ref={whatRef} className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+            <SubHeading ref={whatRef} className="text-3xl font-bold mb-8 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
               <span className="relative inline-block">
                 What Sets Us Apart?
                 <span className={`absolute bottom-0 left-0 h-1 bg-primary-red transition-all duration-500 ${whatInView ? 'w-full' : 'w-0'}`}></span>
               </span>
-            </h3>
+            </SubHeading>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" id="what-sets-us-apart-cards">
               {/* Licensed Professionals */}
