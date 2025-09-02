@@ -54,7 +54,7 @@ const AboutSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main About Us Section */}
         <div className="text-center mb-16">
-          <SubHeading className="text-4xl md:text-5xl text-secondary-navy mb-6">
+          <SubHeading className="text-4xl md:text-5xl mb-6">
             About Us
           </SubHeading>
           <div className="max-w-4xl mx-auto">
