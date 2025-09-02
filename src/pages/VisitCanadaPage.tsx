@@ -142,7 +142,7 @@ const VisitCanadaPage: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-bg-light-gray animate-fadeIn">
+      <section className="py-20 animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
