@@ -205,7 +205,7 @@ const ImmigratePRPage: React.FC = () => {
       <section className="py-20 bg-white animate-fadeIn">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SubHeading className="text-3xl md:text-4xl text-text-heading mb-6">
+            <SubHeading className="text-3xl md:text-4xl mb-6">
               Why Choose Our Immigration Services?
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
