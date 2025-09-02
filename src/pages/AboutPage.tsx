@@ -164,7 +164,7 @@ const AboutPage: React.FC = () => {
               onClick={() => navigate('/contact')}
               className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-slate-900 transition-colors"
             >
-              Our Services
+              Get in Touch
             </button>
           </div>
         </div>
