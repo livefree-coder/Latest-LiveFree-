@@ -5,15 +5,18 @@ interface SubHeadingProps {
   className?: string;
 }
 
-export function SubHeading({ children, className = '' }: SubHeadingProps) {
-  // All sub-heading styles are defined here.
-  // We use 'font-lato' for the Lato font.
-  // The color is now set to a navy blue (text-blue-900).
-  const baseClasses = "font-lato font-semibold text-blue-900";
+// 1. Wrap the component in React.forwardRef to allow it to receive a ref
+export const SubHeading = React.forwardRef<HTMLHeadingElement, SubHeadingProps>(
+  ({ children, className = '' }, ref) => {
+    // All sub-heading styles are defined here.
+    // We use 'font-lato' for the Lato font.
+    const baseClasses = "font-lato font-semibold text-blue-900";
 
-  return (
-    <h2 className={`${baseClasses} ${className}`}>
-      {children}
-    </h2>
-  );
-}
+    return (
+      // 2. Attach the forwarded ref to the actual h2 element
+      <h2 ref={ref} className={`${baseClasses} ${className}`}>
+        {children}
+      </h2>
+    );
+  }
+);
