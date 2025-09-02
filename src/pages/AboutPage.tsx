@@ -143,8 +143,8 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-secondary-navy via-bg-dark-navy to-secondary-navy py-24">
+      {/* Hero Section - UPDATED */}
+      <section className="relative bg-slate-800 py-24">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heading className="text-5xl md:text-7xl text-white mb-6 leading-tight">
@@ -459,16 +459,16 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* Mission Statement */}
       <section className="py-20 bg-gradient-to-r from-secondary-navy to-bg-dark-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center mb-8">
             <Target className="w-12 h-12 text-primary-red mr-4" />
-            <h2 className="text-4xl md:text-5xl text-white">
+            <SubHeading className="text-4xl md:text-5xl text-white">
               Your Dream. Our Mission.
-            </h2>
+            </SubHeading>
           </div>
           <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-12">
             We believe immigration isn't just a transaction — it's a life-changing decision.
@@ -493,9 +493,9 @@ const AboutPage: React.FC = () => {
       {/* Contact CTA Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
+          <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
             Ready to Begin Your Canadian Journey?
-          </h2>
+          </SubHeading>
           <p className="text-xl text-text-muted mb-8">
             Let's discuss how we can help you achieve your immigration goals
           </p>
