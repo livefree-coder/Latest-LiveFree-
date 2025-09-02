@@ -99,10 +99,10 @@ const AboutSection: React.FC = () => {
 
           {/* What Sets Us Apart */}
           <div className="mb-16">
-            <SubHeading className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
               <Users className="w-8 h-8 text-secondary-navy mr-3" />
               What Sets Us Apart?
-            </SubHeading>
+            </h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" id="what-sets-us-apart-cards">
               {/* Licensed Professionals */}
@@ -170,12 +170,12 @@ const AboutSection: React.FC = () => {
 
           {/* Core Strengths */}
           <div className="mb-16">
-            <SubHeading className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
               <Shield className="w-8 h-8 text-secondary-navy mr-3" />
               Our Core Strengths
-            </SubHeading>
+            </h3>
             
-            <div className="bg-secondary-navy py-20">
+            <div className="bg-slate-800 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {strengths.map((strength, index) => (
                   <div key={index} className="flex items-start">
