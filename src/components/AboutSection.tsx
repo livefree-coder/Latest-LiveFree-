@@ -170,10 +170,10 @@ const AboutSection: React.FC = () => {
 
           {/* Core Strengths */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-secondary-navy mb-8 flex items-center justify-center">
+            <SubHeading className="text-3xl font-bold mb-8 flex items-center justify-center">
               <Shield className="w-8 h-8 text-secondary-navy mr-3" />
               Our Core Strengths
-            </h3>
+            </SubHeading>
             
             <div className="bg-slate-800 rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
