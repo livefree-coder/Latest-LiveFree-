@@ -21,7 +21,7 @@ const AnimatedStatCard = ({ number, label, description }) => {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="bg-blue-900 rounded-2xl p-8 mb-4">
+      <div className="bg-secondary-navy rounded-2xl p-8 mb-4">
         <div className="text-4xl md:text-5xl font-bold text-primary-red mb-2 h-14">
           {/* The CountUp component will animate from 0 to the endValue when `inView` is true */}
           {inView ? (
