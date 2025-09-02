@@ -41,11 +41,11 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-full">
           {/* Logo - FINAL VERSION */}
-          <a href="/" className="site-logo py-3"> {/* Increased padding slightly to py-3 */}
+          <a href="/" className="site-logo"> {/* Removed padding to maximize logo space */}
             <img 
               src="/logo2.svg"
               alt="LiveFree Immigration Canada Logo" 
-              className="h-20 w-auto" // This will now fill the new, larger header height
+              className="h-full w-auto" // This will now fill the full header height
             />
           </a>
 
