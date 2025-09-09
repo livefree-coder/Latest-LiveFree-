@@ -43,10 +43,11 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Study Permits</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Work Permits</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Family Sponsorship</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Visa Appeals</a></li>
+              <li><a href="/study-in-canada" className="text-gray-300 hover:text-white transition-colors">Study in Canada</a></li>
+              <li><a href="/visit-canada" className="text-gray-300 hover:text-white transition-colors">Visit Canada</a></li>
+              <li><a href="/work-in-canada" className="text-gray-300 hover:text-white transition-colors">Work in Canada</a></li>
+              <li><a href="/immigrate-pr" className="text-gray-300 hover:text-white transition-colors">Immigrate (PR)</a></li>
+              <li><a href="/business-immigration" className="text-gray-300 hover:text-white transition-colors">Business Immigration</a></li>
             </ul>
           </div>
         </div>
