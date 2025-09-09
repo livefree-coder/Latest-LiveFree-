@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -25,6 +25,19 @@ const Footer: React.FC = () => {
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-primary-red" />
                 <span className="text-gray-300">info@livefreeimmigration.com</span>
+              </div>
+            </div>
+            
+            {/* Social Media Icons */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
+              <div className="flex space-x-4">
+                <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
+                  <Facebook className="h-5 w-5 text-white" />
+                </div>
+                <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
+                  <Instagram className="h-5 w-5 text-white" />
+                </div>
               </div>
             </div>
           </div>
