@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                   <Facebook className="h-5 w-5 text-white" />
                 </div>
                 <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
-                  <Linkedinn className="h-5 w-5 text-white" />
+                  <Linkedin className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
