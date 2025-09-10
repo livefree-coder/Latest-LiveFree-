@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, LinkedIn } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                   <Facebook className="h-5 w-5 text-white" />
                 </div>
                 <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
-                  <Instagram className="h-5 w-5 text-white" />
+                  <LinkedIn className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 LiveFree Immigration. All rights reserved. | Privacy Policy | Terms of Service
+            © 2025 LiveFree Immigration. All rights reserved.
           </p>
         </div>
       </div>
