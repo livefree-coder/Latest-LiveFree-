@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, LinkedIn } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                   <Facebook className="h-5 w-5 text-white" />
                 </div>
                 <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
-                  <LinkedIn className="h-5 w-5 text-white" />
+                  <Linkedinn className="h-5 w-5 text-white" />
                 </div>
               </div>
             </div>
