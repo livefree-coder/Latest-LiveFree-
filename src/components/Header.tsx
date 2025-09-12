@@ -27,6 +27,16 @@ const Header: React.FC = () => {
     {
       title: 'Business Immigration',
       path: '/business-immigration'
+    },
+    // --- ADDED REFUGEE APPLICATIONS ---
+    {
+      title: 'Refugee Applications',
+      path: '/refugee-application'
+    },
+    // --- ADDED STATUS RESTORATION ---
+    {
+      title: 'Status Restoration',
+      path: '/status-restoration'
     }
   ];
 
@@ -40,16 +50,14 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
-          {/* Logo - FINAL VERSION */}
-          <a href="/" className="site-logo"> {/* Removed padding to maximize logo space */}
+          <a href="/" className="site-logo py-3">
             <img 
               src="/logo2.svg"
               alt="LiveFree Immigration Canada Logo" 
-              className="h-full w-auto" // This will now fill the full header height
+              className="h-full w-auto"
             />
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center h-full">
             <button 
               onClick={handleHomeClick}
@@ -58,7 +66,6 @@ const Header: React.FC = () => {
               Home
             </button>
             
-            {/* Explore Services Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -98,7 +105,6 @@ const Header: React.FC = () => {
             </a>
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden md:flex items-center h-full">
             <button 
               onClick={() => navigate('/contact')}
@@ -108,7 +114,6 @@ const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center h-full">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -119,7 +124,6 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}>
