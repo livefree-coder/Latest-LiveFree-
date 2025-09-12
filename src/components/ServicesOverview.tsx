@@ -1,12 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import { GraduationCap, Plane, Briefcase, MapPin, TrendingUp } from 'lucide-react';
+import { GraduationCap, Plane, Briefcase, MapPin, TrendingUp, Shield, RefreshCw } from 'lucide-react';
 import { SubHeading } from '../components/SubHeading';
 
 const ServicesOverview: React.FC = () => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    // Create intersection observer for scroll animations
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -14,30 +13,26 @@ const ServicesOverview: React.FC = () => {
             const target = entry.target as HTMLElement;
             const index = parseInt(target.dataset.index || '0');
             
-            // Add staggered delay based on card index
             setTimeout(() => {
               target.classList.add('is-visible');
-            }, index * 150); // 150ms delay between each card
+            }, index * 150);
             
-            // Stop observing this element after animation
             observer.unobserve(target);
           }
         });
       },
       {
-        threshold: 0.1, // Trigger when 10% of the card is visible
-        rootMargin: '0px 0px -50px 0px' // Start animation slightly before card is fully visible
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
       }
     );
 
-    // Observe all card elements
     cardRefs.current.forEach((card) => {
       if (card) {
         observer.observe(card);
       }
     });
 
-    // Cleanup observer on component unmount
     return () => {
       observer.disconnect();
     };
@@ -46,33 +41,47 @@ const ServicesOverview: React.FC = () => {
   const services = [
     {
       title: 'Study in Canada',
-      description: 'Open the doors to world-class education with comprehensive study permit assistance, SOP preparation, and post-arrival support for your Canadian academic journey.',
+      description: 'Comprehensive study permit assistance, SOP preparation, and post-arrival support for your academic journey.',
       path: '/study-in-canada',
       icon: GraduationCap
     },
     {
       title: 'Visit Canada',
-      description: 'Explore Canada with confidence through our visitor visa services, including TRV, eTA, business visitor visas, and Super Visa for parents and grandparents.',
+      description: 'Explore Canada with confidence through our visitor visa, eTA, business visitor, and Super Visa services.',
       path: '/visit-canada',
       icon: Plane
     },
     {
       title: 'Work in Canada',
-      description: 'Unlock your career potential with expert work permit guidance, including spousal open work permits, PGWP, LMIA-based permits, and pathways to permanent residency.',
+      description: 'Unlock your career potential with expert work permit guidance, including SOWP, PGWP, and LMIA-based permits.',
       path: '/work-in-canada',
       icon: Briefcase
     },
     {
       title: 'Immigrate (PR)',
-      description: 'Make Canada your permanent home through Express Entry, Provincial Nominee Programs, family sponsorship, and strategic pathways to Canadian citizenship.',
+      description: 'Make Canada your permanent home through Express Entry, PNP, family sponsorship, and pathways to citizenship.',
       path: '/immigrate-pr',
       icon: MapPin
     },
     {
       title: 'Business Immigration',
-      description: 'Invest, innovate, and succeed in Canada through Start-Up Visa programs, Self-Employed Persons Program, and agricultural immigration pathways.',
+      description: 'Invest and innovate in Canada through Start-Up Visa programs, Self-Employed, and agricultural pathways.',
       path: '/business-immigration',
       icon: TrendingUp
+    },
+    // --- ADDED REFUGEE APPLICATIONS ---
+    {
+      title: 'Refugee Applications',
+      description: 'Compassionate and effective representation for those fleeing persecution and seeking safety in Canada.',
+      path: '/refugee-application',
+      icon: Shield
+    },
+    // --- ADDED STATUS RESTORATION ---
+    {
+      title: 'Status Restoration',
+      description: 'Expert guidance to help you restore your visitor, student, or worker status if it has expired.',
+      path: '/status-restoration',
+      icon: RefreshCw
     }
   ];
 
