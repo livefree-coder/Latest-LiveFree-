@@ -93,7 +93,9 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 LiveFree Immigration. All rights reserved.
+            © 2025 LiveFree Immigration. All rights reserved. | 
+            <a href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors mx-2">Privacy Policy</a> | 
+            <a href="/terms-of-service" className="text-gray-300 hover:text-white transition-colors mx-2">Terms of Service</a>
           </p>
         </div>
       </div>
