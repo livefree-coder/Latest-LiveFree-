@@ -9,6 +9,9 @@ import VisitCanadaPage from './pages/VisitCanadaPage';
 import WorkInCanadaPage from './pages/WorkInCanadaPage';
 import ImmigratePRPage from './pages/ImmigratePRPage';
 import BusinessImmigrationPage from './pages/BusinessImmigrationPage';
+// --- ADD THESE TWO IMPORTS ---
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 
 function App() {
   return (
@@ -23,6 +26,10 @@ function App() {
           <Route path="/work-in-canada" element={<WorkInCanadaPage />} />
           <Route path="/immigrate-pr" element={<ImmigratePRPage />} />
           <Route path="/business-immigration" element={<BusinessImmigrationPage />} />
+          
+          {/* --- ADD THESE TWO ROUTES --- */}
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         </Routes>
       </Layout>
     </Router>
