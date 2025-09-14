@@ -140,10 +140,12 @@ const AboutPage: React.FC = () => {
 
   const { ref: whoWeAreRef, inView: whoWeAreInView } = useInView({ threshold: 0.1 });
   const { ref: whyChooseUsRef, inView: whyChooseUsInView } = useInView({ threshold: 0.1 });
+  const { ref: teamRef, inView: teamInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - UPDATED */}
+      {/* Hero Section */}
       <section className="relative bg-slate-800 py-24">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -200,6 +202,60 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* --- NEW OUR TEAM SECTION --- */}
+      <section ref={teamRef} className={`py-20 bg-bg-light-gray transition-opacity duration-1000 ease-in ${teamInView ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-4">
+              Our Leadership Team
+            </SubHeading>
+            <p className="text-xl text-text-muted max-w-3xl mx-auto">
+              Meet the experienced professionals dedicated to your success.
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {/* Rumaiya Huq Profile */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1">
+                <img src="https://placehold.co/400x400/1E2A38/FFFFFF?text=RH" alt="Rumaiya Huq" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
+              </div>
+              <div className="md:col-span-2">
+                <h3 className="text-3xl font-bold text-secondary-navy">Rumaiya Huq, Barrister-at-Law</h3>
+                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Director - International Legal & Corporate Affairs | Strategic Advisor | Canada & Bangladesh Offices</p>
+                <p className="text-text-body mb-6">
+                  Rumaiya Huq brings over a decade of expertise in corporate law, international business, and cross-border legal matters. With an LLM in International Business Law from Osgoode Hall Law School, York University, one of Canada's leading law schools, LLM in International Commercial Law, Northumbria University, UK, and as a Barrister-at-Law (England & Wales), she strengthens the firm's governance, compliance, and operational excellence. She leads strategic initiatives, global partnerships, and client service standards, ensuring that the firm operates with integrity and efficiency. As immigration advice and representation are delivered by the firm's licensed RCICs and Canadian immigration professionals, her oversight of procedural and operational frameworks ensures clients experience a streamlined, transparent, and consistently high-quality service.
+                </p>
+                <div>
+                  <h4 className="text-xl font-bold text-secondary-navy mb-2">Education</h4>
+                  <ul className="list-disc list-inside text-text-body space-y-1">
+                    <li>LLM, International Business Law, Osgoode Hall Law School, York University, CA</li>
+                    <li>LLM, International Commercial Law, Northumbria University, UK</li>
+                    <li>LLB (Hons.), University of London, UK</li>
+                    <li>PGDip in Bar Training (BPTC), Northumbria University, UK</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Raed Saadman Karim Profile */}
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1 md:order-2">
+                 {/* You will replace this src with your Cloudinary URL */}
+                <img src="https://res.cloudinary.com/dankeqpe3/image/upload/v1757872655/image_946c98_x5x2xa.jpg" alt="Raed Saadman Karim" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
+              </div>
+              <div className="md:col-span-2 md:order-1">
+                <h3 className="text-3xl font-bold text-secondary-navy">Raed Saadman Karim - Barrister</h3>
+                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Director - Operations and Case Management | Bangladesh office</p>
+                <p className="text-text-body">
+                  Raed Saadman Karim is a dedicated legal professional with a strong background in international law and a passion for helping people build better futures. He earned his LLB (Hons) from the University of the West of England, Bristol and went on to complete the Barrister Training Course at BPP University, London. After qualifying as a Barrister in the UK, Raed now works on a wide range of cases, from labour compliance and corporate matters to family law, custody, divorce, and migrant workers' rights. This diverse experience allowed him to develop a deep understanding of the challenges individuals and families face when navigating legal systems especially when their futures depend on fair and timely outcomes. With this unique blend of international training, legal expertise, and real-world experience, Raed is committed to guiding clients through the often-complex Canadian immigration process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Achievements Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -211,9 +267,6 @@ const AboutPage: React.FC = () => {
               Numbers that speak to our commitment and success in helping clients achieve their Canadian dreams
             </p>
           </div>
-
-          {/* UPDATED SECTION */}
-          {/* This now maps to the new AnimatedStatCard component */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
               <AnimatedStatCard
@@ -224,8 +277,6 @@ const AboutPage: React.FC = () => {
               />
             ))}
           </div>
-          {/* END OF UPDATED SECTION */}
-
         </div>
       </section>
 
@@ -492,7 +543,7 @@ const AboutPage: React.FC = () => {
 
       {/* Contact CTA Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
             Ready to Begin Your Canadian Journey?
           </SubHeading>
