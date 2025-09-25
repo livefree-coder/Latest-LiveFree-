@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
 
     try {
       // Submit form data to webhook
-      const response = await fetch('https://hook.eu2.make.com/sue3amfugk4cewto9809qupmti6xf9b3', {
+      const response = await fetch('https://hook.us2.make.com/pa9xu8cidjwtr3oxs73irjx9a74m6urq', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
