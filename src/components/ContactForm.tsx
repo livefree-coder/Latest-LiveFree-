@@ -48,11 +48,13 @@ const ContactForm: React.FC = () => {
 
   const inquiryTypes = [
     { value: '', label: 'Select inquiry type' },
-    { value: 'study', label: 'Study in Canada' },
-    { value: 'visit', label: 'Visit Canada' },
-    { value: 'work', label: 'Work in Canada' },
-    { value: 'pr', label: 'Permanent Residency (PR)' },
-    { value: 'business', label: 'Business Immigration' },
+    { value: 'Study in Canada', label: 'Study in Canada' },
+    { value: 'Visit Canada', label: 'Visit Canada' },
+    { value: 'Work in Canada', label: 'Work in Canada' },
+    { value: 'Immigrate (PR)', label: 'Immigrate (PR)' },
+    { value: 'Business Immigration', label: 'Business Immigration' },
+    { value: 'Refugee Applications', label: 'Refugee Applications' },
+    { value: 'Status Restoration', label: 'Status Restoration' },
     { value: 'other', label: 'Other' }
   ];
 
