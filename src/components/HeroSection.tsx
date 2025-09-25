@@ -42,6 +42,16 @@ const HeroSection: React.FC = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById('services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section className="relative h-screen overflow-hidden z-0">
       {/* Background Images */}
@@ -78,7 +88,7 @@ const HeroSection: React.FC = () => {
                 SCHEDULE DISCOVERY CALL
               </button>
               <button 
-                onClick={() => navigate('/contact')}
+                onClick={scrollToServices}
                 className="bg-secondary-navy text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
               >
                 Explore Our Services
