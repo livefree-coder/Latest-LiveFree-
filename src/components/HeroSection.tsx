@@ -96,41 +96,10 @@ const HeroSection: React.FC = () => {
                 </button>
               </div>
             </div>
-            
-            {/* Top Right Tagline */}
-            <div className="hidden lg:block absolute top-8 right-8">
-              <div className="flex items-center gap-4">
-                <div className="text-right">
-                  <p className="text-2xl font-bold text-white mb-1">
-                    Unlock Your Future – LiveFree!
-                  </p>
-                </div>
-                <button 
-                  onClick={() => navigate('/contact')}
-                  className="bg-transparent border-2 border-primary-red text-primary-red px-6 py-3 rounded-md text-sm font-semibold hover:bg-primary-red hover:text-white transition-colors whitespace-nowrap"
-                >
-                  Free Consultation
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Top Section */}
-      <div className="lg:hidden absolute top-4 left-4 right-4 z-20">
-        <div className="flex flex-col items-center gap-3">
-          <p className="text-xl font-bold text-white text-center">
-            Unlock Your Future – LiveFree!
-          </p>
-          <button
-            onClick={() => navigate('/contact')}
-            className="bg-transparent border-2 border-primary-red text-primary-red px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary-red hover:text-white transition-colors"
-          >
-            Free Consultation
-          </button>
-        </div>
-      </div>
     </section>
   );
 };
