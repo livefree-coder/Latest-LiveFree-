@@ -105,13 +105,16 @@ const Header: React.FC = () => {
             </a>
           </nav>
 
-          <div className="hidden md:flex items-center h-full">
-            <button 
+          <div className="hidden md:flex items-center gap-4 h-full">
+            <button
               onClick={() => navigate('/contact')}
               className="bg-transparent border border-primary-red text-gray-700 px-6 py-2 rounded-md text-sm font-medium hover:bg-primary-red hover:text-white transition-colors"
             >
               Free Consultation
             </button>
+            <p className="text-xs font-semibold text-gray-700 whitespace-nowrap">
+              Unlock Your Future – LiveFree!
+            </p>
           </div>
 
           <div className="md:hidden flex items-center h-full">
