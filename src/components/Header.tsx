@@ -112,7 +112,7 @@ const Header: React.FC = () => {
             >
               Free Consultation
             </button>
-            <p className="text-xs font-semibold text-gray-700 whitespace-nowrap">
+            <p className="text-sm font-semibold text-black whitespace-nowrap">
               Unlock Your Future – LiveFree!
             </p>
           </div>
