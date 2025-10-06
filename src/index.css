@@ -11,8 +11,8 @@ html {
 
 /* === UPDATED HEADER SIZING === */
 :root{
-  --header-h: 105px;   /* desktop - increased for a larger logo */
-  --header-h-sm: 89px; /* mobile - increased for a larger logo */
+  --header-h: 135px;   /* desktop - increased for a larger logo (1.5x) */
+  --header-h-sm: 110px; /* mobile - increased for a larger logo (1.5x) */
   --logo-inset: 8px;     /* breathing room inside header */
 }
 
