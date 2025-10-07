@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Linkedin, MessageCircle } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -62,6 +62,11 @@ const Footer: React.FC = () => {
                 <a href="https://www.linkedin.com/company/livefree-immigration-canada/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
                     <Linkedin className="h-5 w-5 text-white" />
+                  </div>
+                </a>
+                <a href="https://wa.me/8801705315758" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                  <div className="p-2 bg-gray-700 rounded-full hover:bg-green-600 transition-colors cursor-pointer">
+                    <MessageCircle className="h-5 w-5 text-white" />
                   </div>
                 </a>
               </div>
