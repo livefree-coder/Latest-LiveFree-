@@ -58,7 +58,7 @@ const StudyInCanadaPage: React.FC = () => {
             <Heading className="text-4xl md:text-6xl text-white mb-6 leading-tight">
               Study in Canada
             </Heading>
-            <p className="text-xl md:text-2xl text-primary-red font-semibold mb-6">
+            <p className="text-xl md:text-2xl text-primary-red font-bold mb-6">
               Open the Doors to World-Class Education & Limitless Opportunities
             </p>
             <div className="max-w-4xl mx-auto">
