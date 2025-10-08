@@ -120,8 +120,8 @@ const WorkInCanadaPage: React.FC = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-slate-800 py-20 animate-fadeIn">
-        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: "url('/WhatsApp Image 2025-09-10 at 13.22.56.jpeg')" }}></div>
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: "url('/WhatsApp Image 2025-09-10 at 13.22.56.jpeg')" }}></div>
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">

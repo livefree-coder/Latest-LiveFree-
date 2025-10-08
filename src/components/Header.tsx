@@ -51,10 +51,11 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
           <a href="/" className="site-logo py-3">
-            <img 
+            <img
               src="/logo2.svg"
-              alt="LiveFree Immigration Canada Logo" 
+              alt="LiveFree Immigration Canada Logo"
               className="h-full w-auto"
+              style={{ transform: 'scale(1.15)', imageRendering: 'crisp-edges' }}
             />
           </a>
 
@@ -112,8 +113,8 @@ const Header: React.FC = () => {
             >
               Free Consultation
             </button>
-            <p className="text-sm font-semibold text-black whitespace-nowrap">
-              Unlock Your Future – LiveFree!
+            <p className="text-sm font-semibold whitespace-nowrap">
+              <span className="text-secondary-navy">Unlock Your Future</span> – <span className="text-primary-red">LiveFree</span>!
             </p>
           </div>
 
