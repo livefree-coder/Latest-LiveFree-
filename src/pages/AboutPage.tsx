@@ -241,8 +241,7 @@ const AboutPage: React.FC = () => {
             {/* Raed Saadman Karim Profile */}
              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1 md:order-2">
-                 {/* You will replace this src with your Cloudinary URL */}
-                <img src="https://res.cloudinary.com/dankeqpe3/image/upload/v1757858290/WhatsApp_Image_2025-09-14_at_10.53.56_syi7v2.jpg" alt="Raed Saadman Karim" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
+                <img src="/Untitled design (1).png" alt="Raed Saadman Karim" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
               </div>
               <div className="md:col-span-2 md:order-1">
                 <h3 className="text-3xl font-bold text-secondary-navy">Raed Saadman Karim - Barrister</h3>
