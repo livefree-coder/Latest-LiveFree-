@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4">LiveFree Immigration</div>
+            <div className="text-2xl font-bold mb-4">LiveFree Immigration Canada</div>
             <p className="text-gray-300 mb-4">
               Your trusted partners in seamless immigration. We provide expert guidance 
               to help you achieve your Canadian immigration dreams.
