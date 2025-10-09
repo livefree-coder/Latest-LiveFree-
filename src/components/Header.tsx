@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               src="/logo2.svg"
               alt="LiveFree Immigration Canada Logo"
               className="h-full w-auto"
-              style={{ transform: 'scale(1.15)', imageRendering: 'crisp-edges' }}
+              style={{ transform: 'scale(1.3)', imageRendering: 'crisp-edges' }}
             />
           </a>
 
@@ -113,8 +113,8 @@ const Header: React.FC = () => {
             >
               Free Consultation
             </button>
-            <p className="text-sm font-semibold whitespace-nowrap">
-              <span className="text-secondary-navy">Unlock Your Future</span> – <span className="text-primary-red">LiveFree</span>!
+            <p className="text-sm whitespace-nowrap">
+              <span className="font-bold text-bg-dark-navy">Unlock Your Future</span> – <span className="font-semibold text-primary-red">LiveFree</span>!
             </p>
           </div>
 

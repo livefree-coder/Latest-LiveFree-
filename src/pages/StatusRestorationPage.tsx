@@ -38,7 +38,8 @@ const StatusRestorationPage: React.FC = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-slate-800 py-20 animate-fadeIn">
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: "url('/WhatsApp Image 2025-10-09 at 13.25.02.jpeg')" }}></div>
+        <div className="absolute inset-0 bg-black bg-opacity-35"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <RefreshCw className="w-16 h-16 text-primary-red" />

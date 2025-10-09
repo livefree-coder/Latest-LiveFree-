@@ -55,12 +55,12 @@ const Footer: React.FC = () => {
               <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-4">
                 <a href="https://www.facebook.com/share/19r7vFtrdK/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
+                  <div className="p-2 bg-gray-700 rounded-full hover:bg-blue-500 transition-colors cursor-pointer">
                     <Facebook className="h-5 w-5 text-white" />
                   </div>
                 </a>
                 <a href="https://www.linkedin.com/company/livefree-immigration-canada/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <div className="p-2 bg-gray-700 rounded-full hover:bg-primary-red transition-colors cursor-pointer">
+                  <div className="p-2 bg-gray-700 rounded-full hover:bg-blue-700 transition-colors cursor-pointer">
                     <Linkedin className="h-5 w-5 text-white" />
                   </div>
                 </a>
