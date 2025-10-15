@@ -9,6 +9,15 @@ html {
 @tailwind components;
 @tailwind utilities;
 
+/* Logo clarity enhancement */
+img[src="/logo2.svg"] {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
 
 /* Animation utility (unchanged) */
 @layer utilities{
