@@ -467,45 +467,51 @@ const AboutPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
-            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col">
               <div className="w-32 h-32 bg-gradient-to-br from-secondary-navy to-bg-dark-navy rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Users className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
-                Senior Immigration Consultant
-              </h4>
-              <p className="text-secondary-navy font-semibold mb-4">RCIC, LLB</p>
-              <p className="text-text-muted leading-relaxed">
-                Regulated Canadian Immigration Consultant with extensive experience in complex immigration cases.
-              </p>
+              <div className="flex-1 flex flex-col justify-center">
+                <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
+                  Senior Immigration Consultant
+                </h4>
+                <p className="text-secondary-navy font-semibold mb-4">RCIC</p>
+                <p className="text-text-muted leading-relaxed">
+                  Regulated Canadian Immigration Consultant with extensive experience in complex immigration cases.
+                </p>
+              </div>
             </div>
 
             {/* Team Member 2 */}
-            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col">
               <div className="w-32 h-32 bg-gradient-to-br from-primary-red to-red-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Scale className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
-                Legal Advisor
-              </h4>
-              <p className="text-secondary-navy font-semibold mb-4">Barrister, England & Wales</p>
-              <p className="text-text-muted leading-relaxed">
-                International legal expert specializing in immigration law and humanitarian cases.
-              </p>
+              <div className="flex-1 flex flex-col justify-center">
+                <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
+                  Legal Advisor
+                </h4>
+                <p className="text-secondary-navy font-semibold mb-4">Barrister, England & Wales</p>
+                <p className="text-text-muted leading-relaxed">
+                  International legal expert specializing in immigration law and humanitarian cases.
+                </p>
+              </div>
             </div>
 
             {/* Team Member 3 */}
-            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <div className="bg-bg-light-gray rounded-xl p-8 text-center hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col">
               <div className="w-32 h-32 bg-gradient-to-br from-green-600 to-teal-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <Globe className="w-16 h-16 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
-                Client Relations Manager
-              </h4>
-              <p className="text-secondary-navy font-semibold mb-4">Immigration Specialist</p>
-              <p className="text-text-muted leading-relaxed">
-                Dedicated to ensuring exceptional client experience and seamless communication.
-              </p>
+              <div className="flex-1 flex flex-col justify-center">
+                <h4 className="text-xl font-bold text-bg-dark-navy mb-2">
+                  Client Relations Manager
+                </h4>
+                <p className="text-secondary-navy font-semibold mb-4">Immigration Specialist</p>
+                <p className="text-text-muted leading-relaxed">
+                  Dedicated to ensuring exceptional client experience and seamless communication.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -10,6 +10,29 @@ const BusinessImmigrationPage: React.FC = () => {
 
   const businessPathways = [
     {
+      id: 'pnp-business',
+      title: 'Business Immigration Stream under the Provincial Nominee Program (PNP)',
+      subtitle: 'Start, invest, or manage a business with provincial support',
+      icon: <TrendingUp className="w-8 h-8 text-blue-600" />,
+      description: 'Canada\'s Provincial Nominee Program (PNP) offers excellent pathways for entrepreneurs, investors, and business owners who wish to establish or acquire a business in a specific Canadian province. Each province designs its own business immigration stream to support local economic growth—offering flexible options and a potential pathway to Permanent Residence (PR).',
+      details: [
+        'Minimum net worth (CAD 300,000 – 800,000+)',
+        'Minimum investment in a new or existing business',
+        'Most provinces require basic to moderate language ability (CLB 4–5)',
+        'Business ownership or senior management experience',
+        'Active role in day-to-day operations',
+        'Job creation for Canadians or permanent residents',
+        'Intention to reside in the nominating province'
+      ],
+      services: [
+        'Tailored Program Selection Based on Your Profile',
+        'Professional Business Plan Development',
+        'Full Guidance on Net Worth Verification & Documentation',
+        'Proactive Communication with Provincial Authorities',
+        'Support until Permanent Residence is granted'
+      ]
+    },
+    {
       id: 'startup-visa',
       title: 'Start-Up Visa',
       subtitle: 'For Innovative Entrepreneurs',
