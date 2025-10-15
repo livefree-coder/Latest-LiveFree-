@@ -52,7 +52,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full">
           <a href="/" className="site-logo py-1">
             <img
-              src="/WhatsApp Image 2025-10-09 at 18.05.57 (1).jpeg"
+              src="/Artboard 1 (1).svg"
               alt="LiveFree Immigration Canada Logo"
               className="w-auto"
             />
