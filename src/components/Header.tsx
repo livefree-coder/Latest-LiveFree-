@@ -52,10 +52,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full">
           <a href="/" className="site-logo py-3">
             <img
-              src="/logo2.svg"
+              src="/WhatsApp Image 2025-10-09 at 18.05.57 (1).jpeg"
               alt="LiveFree Immigration Canada Logo"
-              className="h-full w-auto"
-              style={{ transform: 'scale(1.3)', imageRendering: 'crisp-edges' }}
+              className="h-full w-auto max-h-28"
+              style={{ objectFit: 'contain', imageRendering: '-webkit-optimize-contrast' }}
             />
           </a>
 

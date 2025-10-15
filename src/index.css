@@ -44,6 +44,20 @@ header{
   flex:0 0 auto;               /* prevent shrinking */
 }
 
+.site-logo img{
+  max-width: 250px;            /* ensure logo doesn't get too wide */
+  height: auto;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+@media (max-width:768px){
+  .site-logo img{
+    max-width: 180px;          /* slightly smaller on mobile */
+  }
+}
+
 /* Optional: ensure nav and CTA align perfectly on the same baseline */
 .header-nav,
 .header-cta{
