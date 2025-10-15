@@ -47,14 +47,14 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 h-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
-          <a href="/" className="flex items-center">
+          <a href="/" className="flex items-center py-4">
             <img
               src="/logo2.svg"
               alt="LiveFree Immigration Canada"
-              className="h-12 w-auto"
+              className="h-24 w-auto"
             />
           </a>
 
