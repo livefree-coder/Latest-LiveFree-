@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             <img
               src="/logo2.svg"
               alt="LiveFree Immigration Canada"
-              className="h-36 w-auto"
+              className="h-[152px] w-auto"
               style={{ imageRendering: '-webkit-optimize-contrast', filter: 'contrast(1.15) brightness(1.05) saturate(1.1)' }}
             />
           </a>
