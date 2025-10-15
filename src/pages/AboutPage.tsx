@@ -395,8 +395,8 @@ const AboutPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center group hover:scale-105 transition-transform duration-300 cursor-pointer">
-                <div className="bg-bg-light-gray rounded-xl p-8 mb-6 group-hover:bg-red-50 transition-colors">
+              <div key={index} className="text-center group hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-col">
+                <div className="bg-bg-light-gray rounded-xl p-8 mb-6 group-hover:bg-red-50 transition-colors flex-1 flex flex-col">
                   <div className="flex justify-center mb-4">
                     <div className="group-hover:rotate-[360deg] transition-transform duration-500">
                       {value.icon}
@@ -405,7 +405,7 @@ const AboutPage: React.FC = () => {
                   <h4 className="text-xl font-bold text-bg-dark-navy mb-4">
                     {value.title}
                   </h4>
-                  <p className="text-text-muted leading-relaxed">
+                  <p className="text-text-muted leading-relaxed flex-1">
                     {value.description}
                   </p>
                 </div>
