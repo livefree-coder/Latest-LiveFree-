@@ -11,8 +11,8 @@ html {
 
 /* === UPDATED HEADER SIZING === */
 :root{
-  --header-h: 135px;   /* desktop - increased for a larger logo (1.5x) */
-  --header-h-sm: 110px; /* mobile - increased for a larger logo (1.5x) */
+  --header-h: 135px;   /* desktop - keep same height */
+  --header-h-sm: 110px; /* mobile - keep same height */
   --logo-inset: 8px;     /* breathing room inside header */
 }
 
@@ -45,8 +45,9 @@ header{
 }
 
 .site-logo img{
-  max-width: 250px;            /* ensure logo doesn't get too wide */
+  max-width: 387px;            /* increased by 55% from 250px */
   height: auto;
+  max-height: 120px;           /* ensure it fits within header */
   object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -54,7 +55,8 @@ header{
 
 @media (max-width:768px){
   .site-logo img{
-    max-width: 180px;          /* slightly smaller on mobile */
+    max-width: 279px;          /* increased by 55% from 180px */
+    max-height: 100px;         /* ensure it fits within mobile header */
   }
 }
 

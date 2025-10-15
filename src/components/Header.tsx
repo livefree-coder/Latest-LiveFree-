@@ -50,11 +50,11 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
-          <a href="/" className="site-logo py-3">
+          <a href="/" className="site-logo py-2">
             <img
               src="/WhatsApp Image 2025-10-09 at 18.05.57 (1).jpeg"
               alt="LiveFree Immigration Canada Logo"
-              className="h-full w-auto max-h-28"
+              className="w-auto"
               style={{ objectFit: 'contain', imageRendering: '-webkit-optimize-contrast' }}
             />
           </a>
