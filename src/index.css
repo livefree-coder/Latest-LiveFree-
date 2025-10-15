@@ -45,9 +45,9 @@ header{
 }
 
 .site-logo img{
-  max-width: 500px;            /* doubled from 250px (100% increase) */
+  max-width: 750px;            /* tripled from 250px (200% increase) */
   height: auto;
-  max-height: 125px;           /* maximize within header */
+  max-height: 130px;           /* maximize within header */
   object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -59,8 +59,8 @@ header{
 
 @media (max-width:768px){
   .site-logo img{
-    max-width: 360px;          /* doubled from 180px (100% increase) */
-    max-height: 105px;         /* maximize within mobile header */
+    max-width: 540px;          /* tripled from 180px (200% increase) */
+    max-height: 108px;         /* maximize within mobile header */
   }
 }
 
