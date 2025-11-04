@@ -251,6 +251,27 @@ const AboutPage: React.FC = () => {
                 </p>
               </div>
             </div>
+
+            {/* Shahriar Ahmed Profile */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              <div className="md:col-span-1">
+                <img src="/WhatsApp Image 2025-11-04 at 16.17.47_b96474bc.jpg" alt="Shahriar Ahmed" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
+              </div>
+              <div className="md:col-span-2">
+                <h3 className="text-3xl font-bold text-secondary-navy">Shahriar Ahmed</h3>
+                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Regulated Canadian Immigration Consultant (RCIC) | Licensed Immigration Consultant</p>
+                <p className="text-text-body mb-6">
+                  Shahriar Ahmed is a Regulated Canadian Immigration Consultant (RCIC) and a member in good standing with the College of Immigration and Citizenship Consultants (CICC). With extensive experience in Canadian immigration law and policy, Shahriar specializes in providing comprehensive immigration solutions for individuals, families, and businesses seeking to make Canada their home. His practice encompasses a wide range of immigration matters, including permanent residence applications, temporary residence permits, work and study permits, family sponsorships, and humanitarian and compassionate cases. Known for his meticulous attention to detail and client-centered approach, Shahriar is committed to navigating the complexities of the immigration system while ensuring transparency and integrity throughout the process. His dedication to achieving successful outcomes has helped countless clients realize their Canadian dreams.
+                </p>
+                <div>
+                  <h4 className="text-xl font-bold text-secondary-navy mb-2">Professional Credentials</h4>
+                  <ul className="list-disc list-inside text-text-body space-y-1">
+                    <li>Regulated Canadian Immigration Consultant (RCIC)</li>
+                    <li>Member, College of Immigration and Citizenship Consultants (CICC)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
