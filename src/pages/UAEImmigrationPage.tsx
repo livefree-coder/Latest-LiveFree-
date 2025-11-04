@@ -82,8 +82,14 @@ const UAEImmigrationPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative bg-gradient-to-r from-amber-600 to-red-600 py-24">
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      <section className="relative bg-gradient-to-r from-amber-600 to-red-600 py-24"
+        style={{
+          backgroundImage: 'url(/UAE.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay'
+        }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heading className="text-5xl md:text-7xl text-white mb-6 leading-tight">
             UAE Immigration <span className="text-amber-200">Services</span>
