@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
               </p>
               <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
                 <Clock className="w-4 h-4 mr-2" />
-                Response within 1 business day
+                Response within 3 business days
               </div>
             </div>
 

@@ -55,6 +55,8 @@ const ContactForm: React.FC = () => {
     { value: 'Business Immigration', label: 'Business Immigration' },
     { value: 'Refugee Applications', label: 'Refugee Applications' },
     { value: 'Status Restoration', label: 'Status Restoration' },
+    { value: 'UK Immigration Services', label: 'UK Immigration Services' },
+    { value: 'UAE Immigration Services', label: 'UAE Immigration Services' },
     { value: 'other', label: 'Other' }
   ];
 
@@ -174,7 +176,7 @@ const ContactForm: React.FC = () => {
       <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
         <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-green-800 mb-2">
-          Thanks! We'll get back to you within 1 business day.
+          Thanks! We'll get back to you within 3 business days.
         </h3>
         <p className="text-green-700">
           Your message has been sent successfully. We appreciate your interest in LiveFree Immigration.
