@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4">LiveFree Immigration Canada</div>
+            <div className="text-2xl font-bold mb-4">LiveFree Immigration Services</div>
             <p className="text-gray-300 mb-4">
               Your trusted partners in seamless immigration. We provide expert guidance 
               to help you achieve your Canadian immigration dreams.
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 LiveFree Immigration Canada. All rights reserved. | 
+            © 2025 LiveFree Immigration Services. All rights reserved. | 
             <a href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors mx-2">Privacy Policy</a> | 
             <a href="/terms-of-service" className="text-gray-300 hover:text-white transition-colors mx-2">Terms of Service</a>
           </p>

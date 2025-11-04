@@ -153,7 +153,7 @@ const AboutPage: React.FC = () => {
             About <span className="text-primary-red">LiveFree</span>
           </Heading>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Your trusted partners in Canadian immigration, building futures and making dreams reality
+            Your trusted partners in global immigration services, building futures and making dreams reality
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -182,7 +182,7 @@ const AboutPage: React.FC = () => {
             </SubHeading>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-text-body leading-relaxed mb-8">
-                LiveFree Immigration Canada is a client-focused immigration consultancy built on
+                LiveFree Immigration Services is a client-focused immigration consultancy built on
                 expertise, integrity, and results. Our team of highly skilled licensed consultants,
                 legal professionals and immigration experts brings years of combined experience in
                 Canadian immigration law and global mobility.

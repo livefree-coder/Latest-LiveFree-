@@ -17,17 +17,17 @@ const TermsOfServicePage: React.FC = () => {
 
           <SubHeading className="text-2xl border-b pb-2">2. No Consultant-Client Relationship</SubHeading>
           <p>
-            The information provided on this website is for general informational purposes only and does not constitute legal or immigration advice. Your use of this website, including submitting a contact form, does not create a consultant-client relationship with LiveFree Immigration Canada. Such a relationship is only formed upon the signing of a formal retainer agreement.
+            The information provided on this website is for general informational purposes only and does not constitute legal or immigration advice. Your use of this website, including submitting a contact form, does not create a consultant-client relationship with LiveFree Immigration Services. Such a relationship is only formed upon the signing of a formal retainer agreement.
           </p>
 
           <SubHeading className="text-2xl border-b pb-2">3. Intellectual Property</SubHeading>
           <p>
-            All content on this website, including text, graphics, logos, and images, is the property of LiveFree Immigration Canada and is protected by copyright laws. Unauthorized use of any material on this site is prohibited.
+            All content on this website, including text, graphics, logos, and images, is the property of LiveFree Immigration Services and is protected by copyright laws. Unauthorized use of any material on this site is prohibited.
           </p>
           
           <SubHeading className="text-2xl border-b pb-2">4. Limitation of Liability</SubHeading>
           <p>
-            LiveFree Immigration Canada is not liable for any errors or omissions in the content of this site or for any damages arising from the use or performance of this site under any circumstances.
+            LiveFree Immigration Services is not liable for any errors or omissions in the content of this site or for any damages arising from the use or performance of this site under any circumstances.
           </p>
 
           <SubHeading className="text-2xl border-b pb-2">5. Governing Law</SubHeading>
