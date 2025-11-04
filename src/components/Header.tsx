@@ -58,18 +58,20 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50 h-48 border-b-2 border-gray-200">
+    <header className="bg-white shadow-sm sticky top-0 z-50 h-36">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-        <div className="flex justify-between items-center h-full py-3">
-          <a href="/" className="flex items-center h-full py-2">
+        <div className="flex justify-between items-center h-full">
+          <a href="/" className="flex items-center py-1">
             <img
               src="/WhatsApp Image 2025-11-03 at 15.23.30_c6d1ab31.jpg"
               alt="LiveFree Immigration Services"
-              className="h-full w-auto max-h-44 object-contain"
+              className="h-32 w-auto object-contain"
               style={{
                 imageRendering: 'crisp-edges',
                 WebkitFontSmoothing: 'antialiased',
-                filter: 'contrast(1.15) brightness(1.08) saturate(1.1) sharpen(1)'
+                transform: 'scale(1.3)',
+                transformOrigin: 'left center',
+                filter: 'contrast(1.15) brightness(1.08) saturate(1.1)'
               }}
             />
           </a>
