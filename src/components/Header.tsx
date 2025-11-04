@@ -65,7 +65,7 @@ const Header: React.FC = () => {
             <img
               src="/Untitled design.svg"
               alt="LiveFree Immigration Services"
-              className="h-52 w-auto object-contain"
+              className="h-40 w-auto object-contain"
             />
           </a>
 
