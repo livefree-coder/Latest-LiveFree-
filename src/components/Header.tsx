@@ -63,14 +63,9 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full">
           <a href="/" className="flex items-center shrink-0">
             <img
-              src="/WhatsApp Image 2025-11-03 at 15.23.30_c6d1ab31.jpg"
+              src="/White Brown Modern Thank You For Visiting Metal Sign.svg"
               alt="LiveFree Immigration Services"
               className="h-32 w-auto max-h-32 object-contain"
-              style={{
-                imageRendering: 'crisp-edges',
-                WebkitFontSmoothing: 'antialiased',
-                filter: 'contrast(1.15) brightness(1.08) saturate(1.1)'
-              }}
             />
           </a>
 
