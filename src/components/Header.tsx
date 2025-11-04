@@ -93,10 +93,10 @@ const Header: React.FC = () => {
                 }`} />
               </button>
 
-              <div className={`absolute top-full left-0 mt-1 w-80 bg-white rounded-md shadow-lg border border-gray-200 z-50 transition-all duration-300 ease-in-out overflow-hidden ${
+              <div className={`absolute top-full left-0 mt-1 w-80 bg-white rounded-md shadow-lg border border-gray-200 z-50 transition-all duration-300 ease-in-out ${
                 isServicesOpen
-                  ? 'max-h-[600px] opacity-100 transform translate-y-0'
-                  : 'max-h-0 opacity-0 transform -translate-y-2'
+                  ? 'max-h-[800px] opacity-100 transform translate-y-0 overflow-y-auto'
+                  : 'max-h-0 opacity-0 transform -translate-y-2 overflow-hidden'
               }`}>
                 <div className="py-1">
                   <div className="px-4 py-3 border-b border-gray-200">
