@@ -11,9 +11,10 @@ import ImmigratePRPage from './pages/ImmigratePRPage';
 import BusinessImmigrationPage from './pages/BusinessImmigrationPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
-// --- ADD THESE TWO IMPORTS ---
 import RefugeeApplicationPage from './pages/RefugeeApplicationPage';
 import StatusRestorationPage from './pages/StatusRestorationPage';
+import UKImmigrationPage from './pages/UKImmigrationPage';
+import UAEImmigrationPage from './pages/UAEImmigrationPage';
 
 function App() {
   return (
@@ -30,10 +31,10 @@ function App() {
           <Route path="/business-immigration" element={<BusinessImmigrationPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-
-          {/* --- ADD THESE TWO ROUTES --- */}
           <Route path="/refugee-application" element={<RefugeeApplicationPage />} />
           <Route path="/status-restoration" element={<StatusRestorationPage />} />
+          <Route path="/uk-immigration" element={<UKImmigrationPage />} />
+          <Route path="/uae-immigration" element={<UAEImmigrationPage />} />
         </Routes>
       </Layout>
     </Router>
