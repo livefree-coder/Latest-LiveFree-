@@ -58,14 +58,14 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 h-36">
+    <header className="bg-white shadow-sm sticky top-0 z-50 h-44">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
           <a href="/" className="flex items-center shrink-0">
             <img
               src="/White Brown Modern Thank You For Visiting Metal Sign.svg"
               alt="LiveFree Immigration Services"
-              className="h-32 w-auto max-h-32 object-contain"
+              className="h-40 w-auto max-h-40 object-contain"
             />
           </a>
 
