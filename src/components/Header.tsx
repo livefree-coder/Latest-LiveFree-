@@ -63,10 +63,10 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full">
           <a href="/" className="flex items-center -ml-4">
             <img
-              src="/logo2.svg"
-              alt="LiveFree Immigration Canada"
+              src="/WhatsApp Image 2025-11-03 at 15.23.30_c6d1ab31.jpg"
+              alt="LiveFree Immigration Services"
               className="h-40 w-auto"
-              style={{ imageRendering: '-webkit-optimize-contrast', filter: 'contrast(1.15) brightness(1.05) saturate(1.1)' }}
+              style={{ imageRendering: '-webkit-optimize-contrast', filter: 'contrast(1.05) brightness(1.02)' }}
             />
           </a>
 
