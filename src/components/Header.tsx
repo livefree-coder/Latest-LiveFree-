@@ -63,7 +63,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full">
           <a href="/" className="flex items-center shrink-0">
             <img
-              src="/White Brown Modern Thank You For Visiting Metal Sign.svg"
+              src="/Untitled design.svg"
               alt="LiveFree Immigration Services"
               className="h-52 w-auto object-contain"
             />
