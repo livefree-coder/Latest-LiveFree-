@@ -65,7 +65,7 @@ const Header: React.FC = () => {
             <img
               src="/White Brown Modern Thank You For Visiting Metal Sign.svg"
               alt="LiveFree Immigration Services"
-              className="h-40 w-auto max-h-40 object-contain"
+              className="h-52 w-auto object-contain"
             />
           </a>
 
