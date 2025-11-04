@@ -122,30 +122,6 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Internal Links */}
-      <section className="py-12 bg-white border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-lg font-semibold text-slate-900 mb-6">
-              Need more information?
-            </h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#faq"
-                className="inline-flex items-center justify-center px-6 py-3 border border-secondary-navy text-secondary-navy rounded-md font-medium hover:bg-gray-50 transition-colors"
-              >
-                View FAQs
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center px-6 py-3 bg-primary-red text-white rounded-md font-medium hover:bg-primary-red-hover transition-colors"
-              >
-                Explore Services
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
