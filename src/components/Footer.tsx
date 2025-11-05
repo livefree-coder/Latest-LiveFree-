@@ -10,8 +10,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="text-2xl font-bold mb-4">LiveFree Immigration Services</div>
             <p className="text-gray-300 mb-4">
-              Your trusted partners in seamless immigration. We provide expert guidance 
-              to help you achieve your Canadian immigration dreams.
+              Your trusted partners in seamless immigration. We provide expert guidance to help you achieve your immigration dreams.
             </p>
             
             {/* UPDATED Contact Info Section */}
