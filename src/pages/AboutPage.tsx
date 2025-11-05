@@ -252,24 +252,17 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Shahriar Ahmed Profile */}
+            {/* Muhammad Shahriar Mozid Profile */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <img src="/WhatsApp Image 2025-11-04 at 16.17.47_b96474bc.jpg" alt="Shahriar Ahmed" className="rounded-lg shadow-lg w-full h-auto object-contain aspect-square"/>
+                <img src="/WhatsApp Image 2025-11-04 at 16.17.47_b96474bc.jpg" alt="Muhammad Shahriar Mozid" className="rounded-lg shadow-lg w-full h-auto object-contain aspect-square"/>
               </div>
               <div className="md:col-span-2">
-                <h3 className="text-3xl font-bold text-secondary-navy">Shahriar Ahmed</h3>
-                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Regulated Canadian Immigration Consultant (RCIC) | Licensed Immigration Consultant</p>
+                <h3 className="text-3xl font-bold text-secondary-navy">Muhammad Shahriar Mozid</h3>
+                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Barrister-at-Law Strategic Partner | UK Immigration Services</p>
                 <p className="text-text-body mb-6">
-                  Shahriar Ahmed is a Regulated Canadian Immigration Consultant (RCIC) and a member in good standing with the College of Immigration and Citizenship Consultants (CICC). With extensive experience in Canadian immigration law and policy, Shahriar specializes in providing comprehensive immigration solutions for individuals, families, and businesses seeking to make Canada their home. His practice encompasses a wide range of immigration matters, including permanent residence applications, temporary residence permits, work and study permits, family sponsorships, and humanitarian and compassionate cases. Known for his meticulous attention to detail and client-centered approach, Shahriar is committed to navigating the complexities of the immigration system while ensuring transparency and integrity throughout the process. His dedication to achieving successful outcomes has helped countless clients realize their Canadian dreams.
+                  Muhammad Shahriar Mozid, a distinguished Barrister from Lincoln's Inn, brings his exceptional legal expertise as Strategic Partner at LiveFree Immigration, with a dedicated focus on UK immigration services. Trained at one of the historic Inns of Court and holding dual master's degrees in Law from the University of Dhaka and University College London (UCL), Shahriar combines rigorous academic training with a deep understanding of international legal frameworks. As a practising Barrister in Bangladesh with experience appearing before the highest courts, Shahriar applies sophisticated legal thinking and advocacy to complex immigration and humanitarian cases. His UK legal qualification and understanding of Commonwealth legal systems significantly strengthen LiveFree's ability to navigate cross-border legal challenges, particularly in cases involving UK immigration pathways, appeals, and professional consultations requiring international legal insight. Shahriar's analytical precision and ethical commitment ensure that clients receive strategic guidance grounded in the highest standards of professional conduct.
                 </p>
-                <div>
-                  <h4 className="text-xl font-bold text-secondary-navy mb-2">Professional Credentials</h4>
-                  <ul className="list-disc list-inside text-text-body space-y-1">
-                    <li>Regulated Canadian Immigration Consultant (RCIC)</li>
-                    <li>Member, College of Immigration and Citizenship Consultants (CICC)</li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
