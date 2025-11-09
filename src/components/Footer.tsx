@@ -3,8 +3,9 @@ import { MapPin, Phone, Mail, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-sky-950 text-white" style={{ backgroundColor: '#082f49', backgroundImage: 'none' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="relative text-white" style={{ backgroundColor: '#082f49' }}>
+      <div className="absolute inset-0" style={{ backgroundColor: '#082f49', zIndex: 0 }}></div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
