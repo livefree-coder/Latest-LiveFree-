@@ -163,3 +163,16 @@ img[src="/logo2.svg"] {
 .nav-link-underline:hover::after {
   width: 100%;
 }
+
+/* Remove any background patterns from navy sections */
+.bg-slate-800,
+.bg-sky-950 {
+  background-image: none !important;
+}
+
+.bg-slate-800::before,
+.bg-slate-800::after,
+.bg-sky-950::before,
+.bg-sky-950::after {
+  display: none !important;
+}
