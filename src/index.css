@@ -166,13 +166,33 @@ img[src="/logo2.svg"] {
 
 /* Remove any background patterns from navy sections */
 .bg-slate-800,
-.bg-sky-950 {
+.bg-sky-950,
+footer,
+#services-section {
   background-image: none !important;
+  background-attachment: initial !important;
+  background-size: initial !important;
+  background-position: initial !important;
+  background-repeat: initial !important;
 }
 
 .bg-slate-800::before,
 .bg-slate-800::after,
 .bg-sky-950::before,
-.bg-sky-950::after {
+.bg-sky-950::after,
+footer::before,
+footer::after,
+#services-section::before,
+#services-section::after {
+  content: none !important;
   display: none !important;
+}
+
+/* Ensure solid backgrounds */
+.bg-slate-800 {
+  background-color: #1e293b !important;
+}
+
+.bg-sky-950 {
+  background-color: #082f49 !important;
 }

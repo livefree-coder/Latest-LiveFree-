@@ -3,8 +3,8 @@ import { MapPin, Phone, Mail, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-sky-950 text-white overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-sky-950 text-white" style={{ backgroundColor: '#082f49', backgroundImage: 'none' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
@@ -17,13 +17,13 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold text-white mb-2">Main Office:</h4>
-                <div className="space-y-2 pl-2 border-l border-gray-700">
+                <div className="space-y-2">
                   <div className="flex items-start">
-                    <MapPin className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-1" />
+                    <MapPin className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300">6708, 4 AVE NE, Calgary, Alberta, T2A5J2, Canada</span>
                   </div>
-                  <div className="flex items-center">
-                    <Phone className="h-5 w-5 mr-2 text-primary-red" />
+                  <div className="flex items-start">
+                    <Phone className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300">+1 (403) 402-4450</span>
                   </div>
                 </div>
@@ -31,20 +31,20 @@ const Footer: React.FC = () => {
 
               <div>
                 <h4 className="font-semibold text-white mb-2">Overseas Office:</h4>
-                 <div className="space-y-2 pl-2 border-l border-gray-700">
+                <div className="space-y-2">
                   <div className="flex items-start">
-                    <MapPin className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-1" />
+                    <MapPin className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300">90 Kakrail (Musafir Tower), 3rd Floor, Kakrail, Dhaka, Bangladesh</span>
                   </div>
-                  <div className="flex items-center">
-                    <Phone className="h-5 w-5 mr-2 text-primary-red" />
+                  <div className="flex items-start">
+                    <Phone className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300">+88017 0531 5758</span>
                   </div>
                 </div>
               </div>
 
-               <div className="flex items-center pt-2">
-                <Mail className="h-5 w-5 mr-2 text-primary-red" />
+              <div className="flex items-start pt-2">
+                <Mail className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">info@livefreeimmigration.com</span>
               </div>
             </div>

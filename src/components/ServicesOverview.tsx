@@ -86,8 +86,8 @@ const ServicesOverview: React.FC = () => {
   ];
 
   return (
-    <section id="services-section" className="relative bg-slate-800 py-20 overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services-section" className="bg-slate-800 py-20" style={{ backgroundColor: '#1e293b', backgroundImage: 'none' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <SubHeading className="text-4xl md:text-5xl font-bold text-white mb-4">
             What We Help You With
