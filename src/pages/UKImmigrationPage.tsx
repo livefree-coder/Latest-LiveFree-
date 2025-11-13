@@ -41,14 +41,14 @@ const UKImmigrationPage: React.FC = () => {
   ];
 
   const services = [
-    "Comprehensive eligibility assessment for UK visa categories",
-    "Application preparation and document review",
-    "Sponsor license guidance for UK employers",
-    "Priority and super-priority application services",
-    "Settlement (Indefinite Leave to Remain) applications",
-    "British citizenship and naturalization applications",
-    "Visa extension and switching applications",
-    "Administrative review and appeal representation"
+    "Visa application assistance for all categories",
+    "Document preparation and verification",
+    "Legal compliance and representation",
+    "Settlement and citizenship guidance",
+    "UK sponsor license applications",
+    "Post-arrival support services",
+    "Appeals and administrative reviews",
+    "Expert consultation and case assessment"
   ];
 
   const whyChooseUs = [
@@ -85,7 +85,7 @@ const UKImmigrationPage: React.FC = () => {
             UK Immigration <span className="text-amber-400">Services</span>
           </Heading>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Expert guidance for your UK visa applications, settlement, and citizenship journey
+            Your trusted partner for navigating UK immigration pathways—work, study, family reunification, and settlement
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -111,7 +111,7 @@ const UKImmigrationPage: React.FC = () => {
               UK Visa Categories We Handle
             </SubHeading>
             <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Whether you're looking to work, study, join family, or establish a business in the UK, we provide expert guidance across all major visa categories
+              From work permits to family visas, business ventures to student pathways—we provide comprehensive support across all UK visa categories to help you achieve your immigration goals
             </p>
           </div>
 
@@ -188,13 +188,13 @@ const UKImmigrationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <SubHeading className="text-4xl md:text-5xl text-white mb-6">
-              Understanding UK Immigration Law
+              Navigating UK Immigration with Confidence
             </SubHeading>
             <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-8">
-              The UK immigration system is complex and constantly evolving. From points-based work visas to family reunification, each pathway has specific requirements and documentation standards. Our team stays current with the latest Home Office guidance and Immigration Rules to ensure your application meets all necessary criteria.
+              The UK immigration landscape is intricate and ever-changing, with strict compliance requirements and detailed documentation standards. Our experienced team remains up-to-date with the latest Home Office policies, Immigration Rules, and legal precedents to ensure your application is thoroughly prepared and meets all criteria.
             </p>
             <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-12">
-              Whether you're seeking temporary residence or permanent settlement in the UK, we provide strategic advice tailored to your unique circumstances, maximizing your chances of success while ensuring full compliance with UK immigration law.
+              Whether you're pursuing a work visa, joining family members, or seeking indefinite leave to remain, we offer personalized strategies designed to maximize your success while maintaining full legal compliance throughout your UK immigration journey.
             </p>
             <button
               onClick={() => navigate('/contact')}
