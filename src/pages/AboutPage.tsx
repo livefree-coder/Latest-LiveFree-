@@ -258,8 +258,8 @@ const AboutPage: React.FC = () => {
                 <img src="/WhatsApp Image 2025-11-04 at 16.17.47_b96474bc.jpg" alt="Muhammad Shahriar Mozid" className="rounded-lg shadow-lg w-full h-auto object-contain aspect-square"/>
               </div>
               <div className="md:col-span-2">
-                <h3 className="text-3xl font-bold text-secondary-navy">Muhammad Shahriar Mozid</h3>
-                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Barrister-at-Law Strategic Partner | UK Immigration Services</p>
+                <h3 className="text-3xl font-bold text-secondary-navy">Muhammad Shahriar Mozid, Barrister-at-Law</h3>
+                <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Strategic Partner | UK Immigration Services</p>
                 <p className="text-text-body mb-6">
                   Muhammad Shahriar Mozid is UK Strategic Partner for Livefree Immigration, a barrister-at-law, and an experienced legal counsel with over a decade of expertise in commercial, corporate, compliance, and regulatory risk management. He holds an LL.B. (Hons.) from the University of London, an LL.M. in International Commercial Law from Northumbria University, and completed the Bar Professional Training Course (BPTC) at City, University of London. He was called to the Bar of England and Wales by the Honourable Society of Lincoln's Inn in 2013.
                 </p>
