@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Briefcase, Building2, GraduationCap, Home, Users, Award } from 'lucide-react';
+import { CheckCircle, Briefcase, Award, Building2, Plane } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Heading } from '../components/Heading';
 import { SubHeading } from '../components/SubHeading';
@@ -10,73 +10,86 @@ const UAEImmigrationPage: React.FC = () => {
   const visaCategories = [
     {
       icon: <Briefcase className="w-8 h-8 text-emerald-600" />,
-      title: "Employment Visa",
-      description: "For professionals with job offers from UAE-based companies. Typically valid for 2-3 years and renewable, providing stability for you and your family."
-    },
-    {
-      icon: <Building2 className="w-8 h-8 text-blue-600" />,
-      title: "Investor Visa",
-      description: "For investors establishing or investing in UAE businesses. Offers long-term residency options including the prestigious Golden Visa for qualifying investments."
+      title: "Investor, Partner & Business-Owner Visas",
+      description: "Dubai's investor and business-owner visas allow foreign nationals to live, work, and operate businesses in the UAE.",
+      eligibility: [
+        "Applicants must demonstrate ownership or partnership in a UAE-licensed company, provide a valid trade licence or proof of company registration, and meet Dubai's regulatory and compliance requirements",
+        "Free Zone companies often allow 100% foreign ownership and streamlined visa processing",
+        "Visas typically last 2–3 years, renewable upon maintaining business activity and compliance",
+        "Benefits include the ability to sponsor family members, open bank accounts, lease property, and legally operate a business in Dubai"
+      ],
+      note: "Ideal for entrepreneurs, investors, and business partners seeking a strategic foothold in Dubai's vibrant economy."
     },
     {
       icon: <Award className="w-8 h-8 text-amber-500" />,
-      title: "Golden Visa",
-      description: "A 5 or 10-year renewable residence visa for investors, entrepreneurs, specialized talents, researchers, and outstanding students. Provides long-term stability in the UAE."
+      title: "Long-Term Residency: Golden & Green Visas",
+      description: "For high-net-worth individuals, investors, and entrepreneurs, Dubai offers long-term residency through the Golden Visa (10 years) and Green Visa (5 years).",
+      eligibility: [],
+      sections: [
+        {
+          subtitle: "Golden Visa (Investor & Entrepreneur Categories):",
+          points: [
+            "Real estate investment: Minimum AED 2 million in property",
+            "Business investment: Minimum AED 2 million in a UAE company or investment fund",
+            "Bank deposits: Some routes allow AED 2 million in a UAE bank for residency",
+            "Duration: 10 years, renewable",
+            "Benefits: No local sponsor required, family sponsorship, long-term stability, and business operation rights"
+          ]
+        },
+        {
+          subtitle: "Green Visa (Investor & Partner Category):",
+          points: [
+            "For investors, partners, freelancers, and self-employed professionals",
+            "Requires proof of investment, company ownership, or income meeting UAE thresholds",
+            "Duration: 5 years, self-sponsored",
+            "Enables residency without the need for employer sponsorship"
+          ]
+        }
+      ],
+      note: "Suitable for individuals seeking long-term strategic presence in Dubai, with residency security for themselves and their families."
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-purple-600" />,
-      title: "Student Visa",
-      description: "For international students enrolled in UAE universities and educational institutions. Allows full-time study and limited work opportunities."
+      icon: <Building2 className="w-8 h-8 text-blue-600" />,
+      title: "Property-Purchase Residency via Real Estate Investment",
+      description: "Dubai (and other UAE emirates) have established real-estate investment routes that allow foreign nationals to obtain long-term residency via the purchase of property.",
+      eligibility: [
+        "The minimum property value for eligibility is AED 2 million (approx USD 545,000) for the 10-year Golden Visa via real-estate",
+        "Freehold residential or commercial properties in eligible zones may qualify. Off-plan or ready properties may be accepted, subject to developer/authority rules",
+        "Mortgages may be permitted (depending on bank and jurisdiction) provided the combined property value meets the threshold",
+        "Multiple properties can be aggregated to reach the threshold, subject to each being in your name and properly registered",
+        "While this yields long-term residency, it is not 'permanent residence' in the sense of citizenship; rather it is a renewable long-term residency permit"
+      ],
+      note: "This route is ideal for individuals who wish to establish long-term residency via property investment, combining real estate ownership with immigration strategy."
     },
     {
-      icon: <Home className="w-8 h-8 text-red-600" />,
-      title: "Property Owner Visa",
-      description: "Available to those who own property in the UAE meeting certain value thresholds. Offers residency benefits for property investors."
-    },
-    {
-      icon: <Users className="w-8 h-8 text-teal-600" />,
-      title: "Family Sponsorship",
-      description: "Allows UAE residents to sponsor their spouse, children, and parents, enabling families to live together in the UAE."
+      icon: <Plane className="w-8 h-8 text-teal-600" />,
+      title: "Visitor & Short-Stay Visas",
+      description: "Dubai also provides multiple options for visitors seeking short-term stays:",
+      eligibility: [
+        "Tourist / Visit Visas: Single or multiple-entry options for 30, 60, or 90 days, extendable depending on nationality and sponsorship",
+        "5-Year Multiple Entry Tourist Visa: Allows repeated visits, each stay up to 90 days",
+        "Sponsor-based Visit Visas: Residents, travel agents, or hotels can sponsor visitors"
+      ],
+      note: "Ideal for exploring Dubai, attending meetings or conferences, and assessing business opportunities before committing to long-term investment or relocation."
     }
   ];
 
-  const services = [
-    "Visa eligibility assessment and strategic planning",
-    "Employment visa processing for companies and employees",
-    "Golden Visa application assistance",
-    "Investor and business visa facilitation",
-    "Family sponsorship and dependent visa applications",
-    "Visa renewal and status change services",
-    "Emirates ID and medical fitness test coordination",
-    "Labour card and work permit processing",
-    "Free zone company setup and visa packages",
-    "Residence permit cancellation and final exit procedures"
-  ];
-
-  const whyUAE = [
+  const whyChooseUs = [
     {
-      title: "Tax-Free Income",
-      description: "The UAE offers zero personal income tax, allowing you to maximize your earnings and savings."
+      title: "Specialized Expertise",
+      description: "Focused on investor, business, and long-term residency visas in Dubai."
     },
     {
-      title: "Strategic Location",
-      description: "Situated at the crossroads of East and West, the UAE provides excellent connectivity to global markets."
+      title: "Tailored Solutions",
+      description: "We align visa strategies with your business, investment, property-acquisition and family goals."
     },
     {
-      title: "World-Class Infrastructure",
-      description: "From modern cities to state-of-the-art facilities, the UAE offers an exceptional quality of life."
+      title: "Comprehensive Support",
+      description: "From documentation, business compliance, property-valuation advice, visa applications to family sponsorship and residency renewal."
     },
     {
-      title: "Business-Friendly Environment",
-      description: "With numerous free zones and 100% foreign ownership options, the UAE is ideal for entrepreneurs and businesses."
-    },
-    {
-      title: "Safety and Security",
-      description: "The UAE is one of the safest countries in the world with low crime rates and political stability."
-    },
-    {
-      title: "Multicultural Society",
-      description: "Home to over 200 nationalities, the UAE embraces diversity and offers a welcoming environment for expatriates."
+      title: "Global Perspective",
+      description: "Serving clients from Bangladesh, Canada, and worldwide, ensuring international compliance and insights."
     }
   ];
 
@@ -92,10 +105,10 @@ const UAEImmigrationPage: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heading className="text-5xl md:text-7xl text-white mb-6 leading-tight">
-            UAE Immigration <span className="text-amber-200">Services</span>
+            Dubai Business, Residency & <span className="text-amber-200">Property-Investment Visa Programmes</span>
           </Heading>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Your gateway to living, working, and thriving in the United Arab Emirates
+            Explore Dubai's Investment, Residency, Property-Purchase and Visitor Opportunities
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -116,54 +129,76 @@ const UAEImmigrationPage: React.FC = () => {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
-              UAE Visa Categories
-            </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              From employment and investment to family reunification, we handle all types of UAE visas and residence permits
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-xl text-text-body leading-relaxed">
+              Dubai offers world-class opportunities for investors, entrepreneurs, business owners, property purchasers and visitors. At LiveFree Immigration Services, we guide clients through Dubai's key visa and residency programmes — from business-owner visas to long-term "Golden/Green" residency, property-investment-based programmes and visitor stays. We help you choose the right pathway, meet the eligibility requirements, and plan for both immediate and long-term goals.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visaCategories.map((category, index) => (
-              <div
-                key={index}
-                className="bg-bg-light-gray rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                <div className="mb-4">{category.icon}</div>
-                <h3 className="text-xl font-bold text-bg-dark-navy mb-4">
-                  {category.title}
-                </h3>
-                <p className="text-text-body leading-relaxed">
-                  {category.description}
-                </p>
-              </div>
-            ))}
+            <p className="text-xl text-text-body leading-relaxed">
+              Whether you are looking to invest or partner in a business, buy property and reside long-term, secure premium residency via Golden/Green Visa schemes, or view Dubai for business or leisure, our experienced advisors provide end-to-end support for individuals and families from Bangladesh and around the world.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="py-20 bg-bg-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
-              Our UAE Immigration Services
-            </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Comprehensive support for all your UAE visa and residency needs
-            </p>
-          </div>
+          <div className="space-y-8">
+            {visaCategories.map((category, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">{category.icon}</div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-bg-dark-navy mb-4">
+                      {index + 1}. {category.title}
+                    </h3>
+                    <p className="text-lg text-text-body leading-relaxed mb-4">
+                      {category.description}
+                    </p>
 
-          <div className="bg-gradient-to-r from-amber-600 to-red-600 rounded-2xl p-8 md:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {services.map((service, index) => (
-                <div key={index} className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mr-4 mt-1 flex-shrink-0" />
-                  <p className="text-white text-lg leading-relaxed">{service}</p>
+                    {category.eligibility && category.eligibility.length > 0 && (
+                      <div className="mb-4">
+                        <p className="font-semibold text-bg-dark-navy mb-2">
+                          {category.title.includes('Property') ? 'Key Requirements & Highlights:' : category.title.includes('Visitor') ? '' : 'Eligibility & Highlights:'}
+                        </p>
+                        <ul className="space-y-2">
+                          {category.eligibility.map((item, itemIndex) => (
+                            <li key={itemIndex} className="flex items-start">
+                              <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                              <span className="text-text-body">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {category.sections && category.sections.map((section, sectionIndex) => (
+                      <div key={sectionIndex} className="mb-4">
+                        <p className="font-semibold text-bg-dark-navy mb-2">{section.subtitle}</p>
+                        <ul className="space-y-2">
+                          {section.points.map((point, pointIndex) => (
+                            <li key={pointIndex} className="flex items-start">
+                              <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                              <span className="text-text-body">{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+
+                    {category.note && (
+                      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mt-4">
+                        <p className="text-sm font-semibold text-amber-900">
+                          {category.note}
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -172,23 +207,20 @@ const UAEImmigrationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <SubHeading className="text-4xl md:text-5xl text-bg-dark-navy mb-6">
-              Why Choose the UAE?
+              Why Choose LiveFree Immigration Services
             </SubHeading>
-            <p className="text-xl text-text-muted max-w-3xl mx-auto">
-              Discover the advantages of living and working in the United Arab Emirates
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyUAE.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whyChooseUs.map((item, index) => (
               <div
                 key={index}
                 className="bg-bg-light-gray rounded-xl p-8 hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="text-xl font-bold text-bg-dark-navy mb-4">
+                <h3 className="text-2xl font-bold text-bg-dark-navy mb-4">
                   {item.title}
                 </h3>
-                <p className="text-text-body leading-relaxed">
+                <p className="text-text-body leading-relaxed text-lg">
                   {item.description}
                 </p>
               </div>
@@ -201,45 +233,28 @@ const UAEImmigrationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <SubHeading className="text-4xl md:text-5xl text-white mb-6">
-              Navigating UAE Immigration
+              Ready to Start Your Dubai Journey?
             </SubHeading>
             <p className="text-xl text-gray-100 leading-relaxed max-w-4xl mx-auto mb-8">
-              The UAE immigration system offers various pathways for professionals, entrepreneurs, investors, and families. With the introduction of the Golden Visa and long-term residence schemes, the UAE has become even more attractive for those seeking stability and opportunities in the Gulf region.
-            </p>
-            <p className="text-xl text-gray-100 leading-relaxed max-w-4xl mx-auto mb-12">
-              Our team has extensive experience with UAE immigration procedures, free zone regulations, and mainland company requirements. We ensure your application is processed efficiently and correctly, whether you're relocating for employment, establishing a business, or joining family in the UAE.
+              Contact us today for expert guidance on your Dubai investment, business, property-purchase or residency pathway. Our experienced advisors are ready to help you navigate Dubai's immigration opportunities with confidence.
             </p>
             <button
               onClick={() => navigate('/contact')}
               className="bg-white text-amber-600 px-10 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Start Your UAE Immigration Journey
+              Schedule Your Consultation
             </button>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SubHeading className="text-3xl md:text-4xl text-bg-dark-navy mb-6">
-            Ready to Move to the UAE?
-          </SubHeading>
-          <p className="text-xl text-text-muted mb-8 max-w-3xl mx-auto">
-            Contact us today for expert guidance on your UAE visa and residency options
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-amber-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-amber-700 transition-colors"
-            >
-              Get in Touch
-            </button>
-            <button
-              onClick={() => navigate('/about')}
-              className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-amber-600 hover:text-white transition-colors"
-            >
-              Learn More About Us
-            </button>
+      <section className="py-12 bg-bg-light-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-lg p-8 border-l-4 border-amber-600">
+            <h3 className="text-2xl font-bold text-bg-dark-navy mb-4">Disclaimer</h3>
+            <p className="text-text-body leading-relaxed">
+              UAE immigration laws, investment thresholds, real estate-based visa rules and visa regulations are subject to frequent change. Eligibility varies depending on individual circumstances, emirate, free-zone jurisdiction, property type and regulatory approval. LiveFree Immigration Services will provide up-to-date guidance and a personalised assessment for all clients.
+            </p>
           </div>
         </div>
       </section>
