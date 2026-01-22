@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: '/whatsapp_image_2026-01-22_at_14.11.32.jpeg',
       title: 'Expert Guidance',
       description: 'Navigate your Canadian immigration journey with confidence and expert support.'
     },
