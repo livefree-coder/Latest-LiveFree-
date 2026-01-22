@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { GraduationCap, Plane, Briefcase, MapPin, TrendingUp, Shield, RefreshCw } from 'lucide-react';
+import { GraduationCap, Plane, Briefcase, MapPin, TrendingUp, Shield, RefreshCw, Globe } from 'lucide-react';
 import { SubHeading } from '../components/SubHeading';
 
 const ServicesOverview: React.FC = () => {
@@ -82,6 +82,20 @@ const ServicesOverview: React.FC = () => {
       description: 'Expert guidance to help you restore your visitor, student, or worker status if it has expired.',
       path: '/status-restoration',
       icon: RefreshCw
+    },
+    // --- ADDED UAE IMMIGRATION ---
+    {
+      title: 'UAE Immigration',
+      description: 'Navigate the UAE immigration process with expert guidance for residency, work permits, and visa services.',
+      path: '/uae-immigration',
+      icon: Globe
+    },
+    // --- ADDED UK IMMIGRATION ---
+    {
+      title: 'UK Immigration',
+      description: 'Comprehensive UK immigration services for visas, work permits, settlement, and citizenship applications.',
+      path: '/uk-immigration',
+      icon: Globe
     }
   ];
 
