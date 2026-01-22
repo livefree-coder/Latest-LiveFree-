@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
       description: 'Turn your educational dreams into reality with our comprehensive study permit services.'
     },
     {
-      image: 'https://images.pexels.com/photos/8132992/pexels-photo-8132992.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: '/3d-silhouette-family-against-sunset-ocean_(1).jpg',
       title: 'Family Reunification',
       description: 'Reunite with your loved ones through our expert family sponsorship programs.'
     }
