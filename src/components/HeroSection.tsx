@@ -10,17 +10,17 @@ const HeroSection: React.FC = () => {
 
   const slides = [
     {
-      image: 'https://res.cloudinary.com/dankeqpe3/image/upload/v1756155016/christina-wocintechchat-com-faEfWCdOKIg-unsplash_zlxgsp.jpg',
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
       title: 'Expert Guidance',
       description: 'Navigate your Canadian immigration journey with confidence and expert support.'
     },
     {
-      image: 'https://res.cloudinary.com/dankeqpe3/image/upload/v1756155029/naassom-azevedo-Q_Sei-TqSlc-unsplash_wx2f3m.jpg',
+      image: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1920',
       title: 'Study Permit',
       description: 'Turn your educational dreams into reality with our comprehensive study permit services.'
     },
     {
-      image: 'https://res.cloudinary.com/dankeqpe3/image/upload/v1756155000/kevin-delvecchio-7noZJ_4nhU8-unsplash_tozey5.jpg',
+      image: 'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=1920',
       title: 'Family Reunification',
       description: 'Reunite with your loved ones through our expert family sponsorship programs.'
     }
