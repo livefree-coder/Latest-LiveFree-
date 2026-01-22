@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       description: 'Navigate your Canadian immigration journey with confidence and expert support.'
     },
     {
-      image: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: '/whatsapp_image_2026-01-22_at_13.54.38.jpeg',
       title: 'Study Permit',
       description: 'Turn your educational dreams into reality with our comprehensive study permit services.'
     },
