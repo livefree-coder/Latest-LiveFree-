@@ -92,10 +92,10 @@ const Footer: React.FC = () => {
               <li><a href="/study-in-canada" className="text-gray-300 hover:text-white transition-colors">Study in Canada</a></li>
               <li><a href="/visit-canada" className="text-gray-300 hover:text-white transition-colors">Visit Canada</a></li>
               <li><a href="/work-in-canada" className="text-gray-300 hover:text-white transition-colors">Work in Canada</a></li>
-              <li><a href="/immigrate-pr" className="text-gray-300 hover:text-white transition-colors">Immigrate (PR)</a></li>
-              <li><a href="/business-immigration" className="text-gray-300 hover:text-white transition-colors">Business Immigration</a></li>
-              <li><a href="/refugee-application" className="text-gray-300 hover:text-white transition-colors">Refugee Applications</a></li>
-              <li><a href="/status-restoration" className="text-gray-300 hover:text-white transition-colors">Status Restoration</a></li>
+              <li><a href="/immigrate-pr" className="text-gray-300 hover:text-white transition-colors">Immigrate to Canada</a></li>
+              <li><a href="/business-immigration" className="text-gray-300 hover:text-white transition-colors">Business Immigration to Canada</a></li>
+              <li><a href="/refugee-application" className="text-gray-300 hover:text-white transition-colors">Refugee Application to Canada</a></li>
+              <li><a href="/status-restoration" className="text-gray-300 hover:text-white transition-colors">Status Restoration in Canada</a></li>
               <li><a href="/uae-immigration" className="text-gray-300 hover:text-white transition-colors">UAE Immigration</a></li>
               <li><a href="/uk-immigration" className="text-gray-300 hover:text-white transition-colors">UK Immigration</a></li>
             </ul>
