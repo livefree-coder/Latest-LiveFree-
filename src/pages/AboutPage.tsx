@@ -181,18 +181,18 @@ const AboutPage: React.FC = () => {
               <span className={`absolute left-0 bottom-0 h-1 bg-primary-red transition-all duration-700 ${whoWeAreInView ? 'w-full' : 'w-0'}`}></span>
             </SubHeading>
             <div className="max-w-4xl mx-auto">
-              <p className="text-xl text-text-body leading-relaxed mb-8">
+              <p className="text-xl text-text-body leading-relaxed mb-8 text-justify">
                 LiveFree Immigration Services is a client-focused immigration consultancy built on
                 expertise, integrity, and results. Our team of highly skilled licensed consultants,
                 legal professionals and immigration experts brings years of combined experience in
                 Canadian immigration law and global mobility.
               </p>
-              <p className="text-lg text-text-muted leading-relaxed mb-8">
+              <p className="text-lg text-text-muted leading-relaxed mb-8 text-justify">
                 We specialize in providing tailored immigration solutions for individuals, families,
                 students, and businesses. Whether it's permanent residency, study permits, work visas,
                 or business immigration, our advice is strategic, accurate, and effective.
               </p>
-              <p className="text-lg text-text-muted leading-relaxed">
+              <p className="text-lg text-text-muted leading-relaxed text-justify">
                 What sets us apart is our commitment to excellence. Our team's deep legal acumen,
                 sharp problem-solving skills, and personalized approach ensure that every client's
                 journey is smooth, transparent, and successful.
@@ -223,7 +223,7 @@ const AboutPage: React.FC = () => {
               <div className="md:col-span-2">
                 <h3 className="text-3xl font-bold text-secondary-navy">Rumaiya Huq, Barrister-at-Law</h3>
                 <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Director - International Legal & Corporate Affairs | Strategic Advisor | Canada & Bangladesh Offices</p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Rumaiya Huq brings over a decade of expertise in corporate law, international business, and cross-border legal matters. With an LLM in International Business Law from Osgoode Hall Law School, York University, one of Canada's leading law schools, LLM in International Commercial Law, Northumbria University, UK, and as a Barrister-at-Law (England & Wales), she strengthens the firm's governance, compliance, and operational excellence. She leads strategic initiatives, global partnerships, and client service standards, ensuring that the firm operates with integrity and efficiency. As immigration advice and representation are delivered by the firm's licensed RCICs and Canadian immigration professionals, her oversight of procedural and operational frameworks ensures clients experience a streamlined, transparent, and consistently high-quality service.
                 </p>
                 <div>
@@ -246,7 +246,7 @@ const AboutPage: React.FC = () => {
               <div className="md:col-span-2 md:order-1">
                 <h3 className="text-3xl font-bold text-secondary-navy">Raed Saadman Karim - Barrister</h3>
                 <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Director - Operations and Case Management | Bangladesh office</p>
-                <p className="text-text-body">
+                <p className="text-text-body text-justify">
                   Raed Saadman Karim is a dedicated legal professional with a strong background in international law and a passion for helping people build better futures. He earned his LLB (Hons) from the University of the West of England, Bristol and went on to complete the Barrister Training Course at BPP University, London. After qualifying as a Barrister in the UK, Raed now works on a wide range of cases, from labour compliance and corporate matters to family law, custody, divorce, and migrant workers' rights. This diverse experience allowed him to develop a deep understanding of the challenges individuals and families face when navigating legal systems especially when their futures depend on fair and timely outcomes. With this unique blend of international training, legal expertise, and real-world experience, Raed is committed to guiding clients through the often-complex Canadian immigration process.
                 </p>
               </div>
@@ -260,22 +260,22 @@ const AboutPage: React.FC = () => {
               <div className="md:col-span-2">
                 <h3 className="text-3xl font-bold text-secondary-navy">Muhammad Shahriar Mozid, Barrister-at-Law</h3>
                 <p className="text-primary-red font-semibold text-lg mt-1 mb-4">Strategic Partner | UK Immigration Services</p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Muhammad Shahriar Mozid is UK Strategic Partner for Livefree Immigration, a barrister-at-law, and an experienced legal counsel with over a decade of expertise in commercial, corporate, compliance, and regulatory risk management. He holds an LL.B. (Hons.) from the University of London, an LL.M. in International Commercial Law from Northumbria University, and completed the Bar Professional Training Course (BPTC) at City, University of London. He was called to the Bar of England and Wales by the Honourable Society of Lincoln's Inn in 2013.
                 </p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Shahriar has served as Country Legal & Compliance Head at both PwC Bangladesh and Siemens Bangladesh, where he advised senior leadership and cross-functional teams on a wide spectrum of commercial and regulatory matters. At Siemens, he led negotiations on high-value global framework agreements and major infrastructure and technology projects, while also overseeing compliance across AML, KYC, data privacy, and sanctions regimes. Notably, he spearheaded Siemens Bangladesh's global carve-out project, successfully executing a complex corporate demerger within strict timelines during the challenges of the COVID-19 pandemic. At PwC, Shahriar managed the legal advisory function, reviewing and negotiating MSAs, vendor and client contracts, data-sharing agreements, and marketing partnerships, while also streamlining governance frameworks and delivering compliance training to business units.
                 </p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Earlier in his career, Shahriar gained valuable litigation and commercial law experience as an Associate at MMHC and Associates, where he advised clients on legal opinions, drafted legal notices and petitions, managed dispute resolution, and conducted complex legal research.
                 </p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Shahriar is currently based in the UK and serves as a Legal Consultant at a London based law firm, where he provides independent advisory support on immigration issues, international student counseling, commercial agreements, compliance governance, and day-to-day operational matters. He additionally manages and coordinates local and international clients for MSR & Partners, strengthening the law firm's global reach.
                 </p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Recognized for his pragmatic, solutions-driven approach, Shahriar has successfully resolved numerous commercial disputes, introduced process improvements that reduced contract turnaround times, and developed governance and training frameworks that enhance compliance and risk awareness across organizations.
                 </p>
-                <p className="text-text-body mb-6">
+                <p className="text-text-body mb-6 text-justify">
                   Beyond his professional work, Shahriar enjoys spending time with his family and friends. A passionate cricket enthusiast, he believes in maintaining positivity and balance in life. He has also been actively involved with Rotary International, having served as President of a prominent Rotary Club in Dhaka. His guiding philosophy is simple yet profound: "Success is temporary, but peace is permanent."
                 </p>
               </div>
@@ -320,7 +320,7 @@ const AboutPage: React.FC = () => {
               <h3 className="text-2xl font-semibold text-secondary-navy mb-6">
                 More Than Applications. We Build Futures.
               </h3>
-              <p className="text-lg text-text-body leading-relaxed">
+              <p className="text-lg text-text-body leading-relaxed text-justify">
                 At LiveFree Immigration, we're not just another immigration firm. We're a dedicated
                 team of licensed immigration consultants and legal experts who understand that
                 immigration is about people, not just paperwork. Whether you're hoping to study,
@@ -346,7 +346,7 @@ const AboutPage: React.FC = () => {
                     Licensed Professionals with Legal Insight
                   </h4>
                 </div>
-                <p className="text-text-body leading-relaxed">
+                <p className="text-text-body leading-relaxed text-justify">
                   Our team is composed of Regulated Canadian Immigration Consultants (RCICs) and
                   Barristers qualified in England and Wales. This blend of Canadian regulatory
                   expertise and international legal knowledge gives you an edge — especially in
@@ -362,7 +362,7 @@ const AboutPage: React.FC = () => {
                     We Don't Just File – We Strategize
                   </h4>
                 </div>
-                <p className="text-text-body leading-relaxed">
+                <p className="text-text-body leading-relaxed text-justify">
                   Every successful immigration case starts with the right strategy. We analyze your
                   profile, goals, and circumstances to recommend the most effective immigration path —
                   not just the easiest or most obvious one. Whether it's choosing the right province,
@@ -379,7 +379,7 @@ const AboutPage: React.FC = () => {
                     Personalized Service, Every Step of the Way
                   </h4>
                 </div>
-                <p className="text-text-body leading-relaxed">
+                <p className="text-text-body leading-relaxed text-justify">
                   At LiveFree, we don't believe in one-size-fits-all solutions. We listen carefully,
                   stay responsive, and tailor our advice and applications to your unique needs —
                   whether you're an international student, skilled professional, entrepreneur, or
@@ -555,7 +555,7 @@ const AboutPage: React.FC = () => {
               Your Dream. Our Mission.
             </SubHeading>
           </div>
-          <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-12">
+          <p className="text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto mb-12 text-justify">
             We believe immigration isn't just a transaction — it's a life-changing decision.
             That's why we've built our practice around integrity, transparency, and results.
             Our goal is to empower you to live free, make informed choices, and reach your
