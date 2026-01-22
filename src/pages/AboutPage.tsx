@@ -218,7 +218,7 @@ const AboutPage: React.FC = () => {
             {/* Rumaiya Huq Profile */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
-                <img src="https://res.cloudinary.com/dankeqpe3/image/upload/v1757858289/WhatsApp_Image_2025-09-10_at_13.23.23_wn0tdw.jpg" alt="Rumaiya Huq" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
+                <img src="/WhatsApp Image 2025-11-03 at 15.23.30_c6d1ab31.jpg" alt="Rumaiya Huq" className="rounded-lg shadow-lg w-full h-auto object-cover aspect-square"/>
               </div>
               <div className="md:col-span-2">
                 <h3 className="text-3xl font-bold text-secondary-navy">Rumaiya Huq, Barrister-at-Law</h3>
