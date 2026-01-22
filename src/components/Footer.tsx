@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                 <div className="space-y-2">
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-300">90 Kakrail (Musafir Tower), 3rd Floor, Kakrail, Dhaka, Bangladesh</span>
+                    <span className="text-gray-300">21 Kakrail, 5th Floor, Dhaka - 1000, Bangladesh</span>
                   </div>
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 mr-2 text-primary-red flex-shrink-0 mt-0.5" />
