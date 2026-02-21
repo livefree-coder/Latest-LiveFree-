@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden z-0">
+    <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-screen overflow-hidden z-0">
       {/* Background Images */}
       {slides.map((slide, index) => (
         <div
@@ -65,9 +65,10 @@ const HeroSection: React.FC = () => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{ maxWidth: '100%', height: 'auto', minHeight: '100%' }}
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
+          <div className="absolute inset-0 bg-black bg-opacity-60" />
         </div>
       ))}
 
@@ -76,22 +77,22 @@ const HeroSection: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex justify-between items-center w-full">
             <div className="max-w-3xl">
-              <Heading className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+              <Heading className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 leading-tight">
                 {slides[currentSlide].title}
               </Heading>
-              <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed">
                 {slides[currentSlide].description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button 
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <button
                   onClick={() => navigate('/contact')}
-                  className="liquid-button-pulse text-white px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                  className="liquid-button-pulse text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg touch-manipulation min-h-[48px]"
                 >
                   SCHEDULE DISCOVERY CALL
                 </button>
-                <button 
+                <button
                   onClick={scrollToServices}
-                  className="bg-secondary-navy text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                  className="bg-secondary-navy text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg touch-manipulation min-h-[48px]"
                 >
                   Explore Our Services
                 </button>
