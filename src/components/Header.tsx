@@ -58,14 +58,14 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 h-44">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+    <header className="bg-white shadow-sm sticky top-0 z-50 h-20 sm:h-28 md:h-36 lg:h-44">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
-          <a href="/" className="flex items-center shrink-0">
+          <a href="/" className="flex items-center shrink-0 py-2">
             <img
               src="/Untitled design.svg"
               alt="LiveFree Immigration Services"
-              className="h-40 w-auto object-contain"
+              className="h-16 sm:h-24 md:h-32 lg:h-40 w-auto object-contain max-w-[200px] sm:max-w-none"
             />
           </a>
 
@@ -162,9 +162,10 @@ const Header: React.FC = () => {
           <div className="md:hidden flex items-center h-full">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-700 hover:text-primary-red"
+              className="text-gray-700 hover:text-primary-red touch-manipulation p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
             </button>
           </div>
         </div>
@@ -172,50 +173,53 @@ const Header: React.FC = () => {
         <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200 overflow-y-auto max-h-[calc(100vh-80px)]">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200 overflow-y-auto max-h-[calc(100vh-5rem)]">
             <button
               onClick={handleHomeClick}
-              className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700"
+              className="block w-full text-left px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded touch-manipulation min-h-[48px]"
             >
               Home
             </button>
 
-            <div className="px-3 py-2">
-              <div className="text-base font-medium text-gray-700 mb-2">Services</div>
+            <div className="px-2 py-2">
+              <div className="text-base font-medium text-gray-700 mb-2 px-2 py-1">Services</div>
 
-              <div className="mb-4">
-                <div className="text-xs font-bold text-primary-red uppercase tracking-wider mb-2 px-4">Canada</div>
+              <div className="mb-3">
+                <div className="text-xs font-bold text-primary-red uppercase tracking-wider mb-2 px-4 py-1">Canada</div>
                 {servicesByCountry.canada.map((service, index) => (
                   <a
                     key={index}
                     href={service.path}
-                    className="block px-6 py-2 text-sm font-medium text-gray-700 transition-colors"
+                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors touch-manipulation min-h-[44px] flex items-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.title}
                   </a>
                 ))}
               </div>
 
-              <div className="mb-4">
-                <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 px-4">UK</div>
+              <div className="mb-3">
+                <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-2 px-4 py-1">UK</div>
                 {servicesByCountry.uk.map((service, index) => (
                   <a
                     key={index}
                     href={service.path}
-                    className="block px-6 py-2 text-sm font-medium text-gray-700 transition-colors"
+                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors touch-manipulation min-h-[44px] flex items-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.title}
                   </a>
                 ))}
               </div>
 
-              <div className="mb-4">
-                <div className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2 px-4">UAE</div>
+              <div className="mb-3">
+                <div className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2 px-4 py-1">UAE</div>
                 {servicesByCountry.uae.map((service, index) => (
                   <a
                     key={index}
                     href={service.path}
-                    className="block px-6 py-2 text-sm font-medium text-gray-700 transition-colors"
+                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors touch-manipulation min-h-[44px] flex items-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {service.title}
                   </a>
@@ -223,15 +227,26 @@ const Header: React.FC = () => {
               </div>
             </div>
 
-            <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700">
+            <a
+              href="/about"
+              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded touch-manipulation min-h-[48px] flex items-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               About Us
             </a>
-            <a href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700">
+            <a
+              href="/contact"
+              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded touch-manipulation min-h-[48px] flex items-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Contact Now
             </a>
             <button
-              onClick={() => navigate('/contact')}
-              className="w-full mt-4 bg-primary-red text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-primary-red-hover transition-colors"
+              onClick={() => {
+                navigate('/contact');
+                setIsMobileMenuOpen(false);
+              }}
+              className="w-full mt-3 mb-2 bg-primary-red text-white px-6 py-3 rounded-md text-base font-medium hover:bg-primary-red-hover transition-colors touch-manipulation min-h-[48px]"
             >
               Free Consultation
             </button>

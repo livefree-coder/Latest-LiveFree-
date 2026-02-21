@@ -173,12 +173,12 @@ const ContactForm: React.FC = () => {
 
   if (isSubmitted) {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-        <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-green-800 mb-2">
+      <div className="bg-green-50 border border-green-200 rounded-lg p-6 sm:p-8 text-center">
+        <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-green-600 mx-auto mb-3 sm:mb-4" />
+        <h3 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">
           Thanks! We'll get back to you within 3 business days.
         </h3>
-        <p className="text-green-700">
+        <p className="text-sm sm:text-base text-green-700">
           Your message has been sent successfully. We appreciate your interest in LiveFree Immigration.
         </p>
       </div>
@@ -187,16 +187,16 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="bg-white">
-      <form onSubmit={handleSubmit} className="space-y-6" aria-labelledby="contact-form-title">
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6" aria-labelledby="contact-form-title">
         <SubHeading id="contact-form-title" className="text-2xl font-bold text-slate-900 mb-6">
         </SubHeading>
-        <SubHeading id="contact-form-title" className="text-2xl font-bold text-bg-dark-navy mb-6">
+        <SubHeading id="contact-form-title" className="text-xl sm:text-2xl font-bold text-bg-dark-navy mb-4 sm:mb-6">
           Send us a message
         </SubHeading>
 
         {/* Full Name */}
         <div>
-          <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1.5 sm:mb-2">
             Full Name *
           </label>
           <input
@@ -206,7 +206,7 @@ const ContactForm: React.FC = () => {
             value={formData.fullName}
             onChange={handleInputChange}
             placeholder="Enter your full name"
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
+            className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-base border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
               errors.fullName ? 'border-red-500' : 'border-gray-300'
             }`}
             aria-describedby={errors.fullName ? 'fullName-error' : undefined}
@@ -220,7 +220,7 @@ const ContactForm: React.FC = () => {
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5 sm:mb-2">
             Email Address *
           </label>
           <input
@@ -230,7 +230,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Enter your email address"
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
+            className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-base border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
               errors.email ? 'border-red-500' : 'border-gray-300'
             }`}
             aria-describedby={errors.email ? 'email-error' : undefined}
@@ -244,7 +244,7 @@ const ContactForm: React.FC = () => {
 
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5 sm:mb-2">
             Phone Number
           </label>
           <input
@@ -254,7 +254,7 @@ const ContactForm: React.FC = () => {
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="Enter your phone number (optional)"
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
+            className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-base border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
               errors.phone ? 'border-red-500' : 'border-gray-300'
             }`}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
@@ -268,7 +268,7 @@ const ContactForm: React.FC = () => {
 
         {/* Inquiry Type */}
         <div>
-          <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-1.5 sm:mb-2">
             Inquiry Type *
           </label>
           <select
@@ -276,7 +276,7 @@ const ContactForm: React.FC = () => {
             name="inquiryType"
             value={formData.inquiryType}
             onChange={handleInputChange}
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
+            className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-base border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
               errors.inquiryType ? 'border-red-500' : 'border-gray-300'
             }`}
             aria-describedby={errors.inquiryType ? 'inquiryType-error' : undefined}
@@ -296,7 +296,7 @@ const ContactForm: React.FC = () => {
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5 sm:mb-2">
             Message *
           </label>
           <textarea
@@ -306,7 +306,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleInputChange}
             placeholder="Tell us about your immigration goals and any questions you have..."
-            className={`w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical ${
+            className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 text-base border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical ${
               errors.message ? 'border-red-500' : 'border-gray-300'
             }`}
             aria-describedby={errors.message ? 'message-error' : undefined}
@@ -362,7 +362,7 @@ const ContactForm: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white transition-colors ${
+          className={`w-full flex items-center justify-center px-6 py-3 sm:py-3.5 border border-transparent text-base sm:text-lg font-medium rounded-md text-white transition-colors touch-manipulation min-h-[48px] ${
             isSubmitting
               ? 'bg-gray-400 cursor-not-allowed'
               : 'bg-primary-red hover:bg-primary-red-hover focus:ring-2 focus:ring-primary-red focus:ring-offset-2'
