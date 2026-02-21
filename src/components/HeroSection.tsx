@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-screen overflow-hidden z-0">
+    <section className="relative min-h-[400px] md:h-[700px] lg:h-screen overflow-hidden z-0">
       {/* Background Images */}
       {slides.map((slide, index) => (
         <div
@@ -65,8 +65,7 @@ const HeroSection: React.FC = () => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="absolute inset-0 w-full h-full object-cover object-center"
-            style={{ maxWidth: '100%', height: 'auto', minHeight: '100%' }}
+            className="w-full h-auto md:absolute md:inset-0 md:h-full md:object-cover object-center"
           />
           <div className="absolute inset-0 bg-black bg-opacity-60" />
         </div>
